@@ -74,35 +74,35 @@
 
 ### 标准全身立绘
 
-![标准全身立绘](examples/images/01-two-breakpoints.png)
+![标准全身立绘](examples/images/01-standard-full-body.png)
 
 ### 三视图设定
 
-![三视图设定](examples/images/02-sort-by-purpose.png)
+![三视图设定](examples/images/02-three-view-turnaround.png)
 
 ### 半身情绪肖像
 
-![半身情绪肖像](examples/images/03-one-fish-many-uses.png)
+![半身情绪肖像](examples/images/03-half-body-portrait.png)
 
 ### 拔剑战斗
 
-![拔剑战斗](examples/images/04-handoff-path.png)
+![拔剑战斗](examples/images/04-sword-drawing.png)
 
 ### 夜巡独行
 
-![夜巡独行](examples/images/05-information-well.png)
+![夜巡独行](examples/images/05-night-patrol.png)
 
 ### 守护姿态
 
-![守护姿态](examples/images/06-idea-press.png)
+![守护姿态](examples/images/06-guard-pose.png)
 
 ### 静态日常
 
-![静态日常](examples/images/07-content-fermentation.png)
+![静态日常](examples/images/07-daily-quiet.png)
 
 ### Q版动作样例
 
-![Q版动作样例](examples/images/08-trust-bridge.png)
+![Q版动作样例](examples/images/08-chibi-actions.png)
 
 这些图片是风格校准样例，不是构图模板。使用时应该从当前文章重新发明隐喻，不要照抄旧案例的物件和构图。
 
@@ -121,13 +121,13 @@ cd kaibing-illustrations
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R ./ian-xiaohei-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
+cp -R ./kevinbee-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
 安装后，在 Codex 里使用：
 
 ```text
-Use $kaibing-illustrations 为这篇中文文章设计并生成 5 张凯冰手绘隐喻正文配图。
+Use $kevinbee-illustrations 为这篇中文文章设计并生成 5 张凯冰手绘隐喻正文配图。
 ```
 
 ---
@@ -137,7 +137,7 @@ Use $kaibing-illustrations 为这篇中文文章设计并生成 5 张凯冰手�
 ### 只做配图规划
 
 ```text
-Use $kaibing-illustrations 先不要生图。
+Use $kevinbee-illustrations 先不要生图。
 请分析下面这篇文章哪里值得配图，输出 5 张左右的 shot list。
 每张图写清楚：放在哪段后、主题、核心意思、结构类型、凯冰在做什么、建议中文标注词。
 
@@ -147,7 +147,7 @@ Use $kaibing-illustrations 先不要生图。
 ### 直接生成正文配图
 
 ```text
-Use $kaibing-illustrations 把下面这篇文章生成 4 张凯冰手绘隐喻正文配图。
+Use $kevinbee-illustrations 把下面这篇文章生成 4 张凯冰手绘隐喻正文配图。
 要求：16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文手写批注。
 
 <粘贴文章>
@@ -156,14 +156,14 @@ Use $kaibing-illustrations 把下面这篇文章生成 4 张凯冰手绘隐喻�
 ### 为单个概念生成一张图
 
 ```text
-Use $kaibing-illustrations 为“信任不是喊出来的，而是一块证据一块证据铺过去”生成一张正文配图。
+Use $kevinbee-illustrations 为“信任不是喊出来的，而是一块证据一块证据铺过去”生成一张正文配图。
 画面要怪诞但清爽，凯冰必须承担核心动作，白帽红星清晰可见，不能画成战斗海报。
 ```
 
 ### 去掉图里的标题或错误文字
 
 ```text
-Use $kaibing-illustrations 帮我编辑这张图，去掉左上角的“流程图”标题，其他内容保持不变。
+Use $kevinbee-illustrations 帮我编辑这张图，去掉左上角的“流程图”标题，其他内容保持不变。
 ```
 
 更多示例见 [examples/prompts.md](examples/prompts.md)。
@@ -193,15 +193,13 @@ Use $kaibing-illustrations 帮我编辑这张图，去掉左上角的“流程�
 ├── README.md
 ├── LICENSE
 ├── NOTICE.md
-├── assets/
-│   └── ian-wechat-qr.jpg
 ├── examples/
 │   ├── images/
-│   │   ├── 01-two-breakpoints.png
-│   │   ├── 02-sort-by-purpose.png
+│   │   ├── 01-standard-full-body.png
+│   │   ├── 02-three-view-turnaround.png
 │   │   └── ...
 │   └── prompts.md
-└── ian-xiaohei-illustrations/
+└── kevinbee-illustrations/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
@@ -209,7 +207,7 @@ Use $kaibing-illustrations 帮我编辑这张图，去掉左上角的“流程�
     │   └── examples/
     └── references/
         ├── style-dna.md
-        ├── kaibing-ip.md
+        ├── kevinbee-ip.md
         ├── composition-patterns.md
         ├── prompt-template.md
         └── qa-checklist.md
@@ -218,7 +216,7 @@ Use $kaibing-illustrations 帮我编辑这张图，去掉左上角的“流程�
 真正需要安装到 Codex 的是子目录：
 
 ```text
-ian-xiaohei-illustrations/
+kevinbee-illustrations/
 ```
 
 根目录的 README、LICENSE、NOTICE 和 examples 是 GitHub 分享文档。
@@ -246,15 +244,14 @@ ian-xiaohei-illustrations/
 
 ## 关于作者
 
-**Ian (伊恩)** — 产品设计师 / 一人公司实践者 / AI Builder
+**凯冰 (KevinBee)** — 产品设计师 / 一人公司实践者 / AI Builder
 
 用 AI 团队打造一人公司。
 
-- GitHub: [helloianneo](https://github.com/helloianneo)
-- X/Twitter: [@ianneo_ai](https://x.com/ianneo_ai)
-- 网站: [www.ianneo.xyz](https://www.ianneo.xyz)
-- 微信: `ianneoxyz`
-- 邮箱: hello.neoc@gmail.com
+- GitHub: [ruijayfeng](https://github.com/ruijayfeng)
+- X/Twitter: <https://github.com/ruijayfeng>
+- 微信: `STAR2023415`
+- 邮箱: fz.dev@foxmail.com
 
 ---
 
@@ -262,20 +259,22 @@ ian-xiaohei-illustrations/
 
 这套凯冰配图 Skill，用于把文章里的抽象判断转化为可识别的手绘隐喻插图。
 
-如果你也在用 AI 做内容、知识库、工作流或产品化，可以继续看我的网站：[www.ianneo.xyz](https://www.ianneo.xyz)。
+如果你也在用 AI 做内容、知识库、工作流或产品化，可以继续看我的 GitHub：[ruijayfeng](https://github.com/ruijayfeng)。
 
-只想先观察，可以关注我的 [X/Twitter](https://x.com/ianneo_ai)。
+只想先观察，可以关注我的 [X/Twitter](https://github.com/ruijayfeng)。
 
-想了解 Indie Builders Club，加微信：`ianneoxyz`，备注「OPC」。
+想了解 Indie Builders Club，加微信：`STAR2023415`，备注「OPC」。
 
-<p>
-  <img src="assets/ian-wechat-qr.jpg" alt="Ian 微信二维码" width="120">
-</p>
-
-不方便扫码也可以搜索微信：`ianneoxyz`。
+也可以直接搜索微信：`STAR2023415`。
 
 ---
 
 ## License
 
 MIT License. See [LICENSE](LICENSE).
+
+---
+
+## 原仓库
+
+https://github.com/ruijayfeng/kaibing-illustrations

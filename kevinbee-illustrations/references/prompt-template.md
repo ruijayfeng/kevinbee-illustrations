@@ -9,7 +9,7 @@ Visual DNA:
 Pure white background. Minimalist black hand-drawn line art with slightly wobbly pencil lines. Lots of empty white space. Sparse short handwritten Chinese annotations in red, orange, and blue. Clean absurd low-tech product-sketch feeling. Soft restrained watercolor-like shading only on 凯冰 and essential objects. No gradients, shadows, paper texture, complex background, commercial vector style, PPT infographic look, realistic UI, character poster composition, or battle key visual.
 
 Recurring IP character required:
-凯冰 (Kaibing), a 2.5-to-3-head-tall chibi anime girl with a calm, serious, slightly distant expression; short layered ice-blue bob hair; red-orange eyes; a worn white baseball cap with one clear bright red five-pointed star centered on the front; a crimson red hooded cloak; black combat dress; black choker; red-and-black belt; and black ankle boots. 凯冰 must perform the core conceptual action, not decorate the scene. The red-star cap is the primary recognition point. A slender silver-gray sword and black-red scabbard are optional action tools, never the focal point. Do not call her 赤星 or CHIXING.
+凯冰 (KevinBee), a 2.5-to-3-head-tall chibi anime girl with a calm, serious, slightly distant expression; short layered ice-blue bob hair; red-orange eyes; a worn white baseball cap with one clear bright red five-pointed star centered on the front; a crimson red hooded cloak; black combat dress; black choker; red-and-black belt; and black ankle boots. 凯冰 must perform the core conceptual action, not decorate the scene. The red-star cap is the primary recognition point. A slender silver-gray sword and black-red scabbard are optional action tools, never the focal point. Do not call her 赤星 or CHIXING.
 
 Theme:
 {正文配图主题}

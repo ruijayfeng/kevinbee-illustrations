@@ -1,5 +1,5 @@
 ---
-name: kaibing-illustrations
+name: kevinbee-illustrations
 description: 为中文文章生成凯冰风格的手绘隐喻正文配图。用于文章、帖子、博客、Notion 文档、工作流文档、方法论、流程、结构、状态、隐喻或观点的配图、shot list 与改图任务；默认使用凯冰 IP、纯白手绘、少量红橙蓝中文批注，以及清爽、低科技、略带荒诞的视觉风格。
 ---
 
@@ -16,7 +16,7 @@ description: 为中文文章生成凯冰风格的手绘隐喻正文配图。用�
 按任务需要读取，不要一次塞满上下文：
 
 - `references/style-dna.md`：风格 DNA、颜色、文字、禁忌。
-- `references/kaibing-ip.md`：凯冰 IP 的形象、性格、动作库和禁忌。
+- `references/kevinbee-ip.md`：凯冰 IP 的形象、性格、动作库和禁忌。
 - `references/composition-patterns.md`：结构类型、原创隐喻方法和反复刻规则。
 - `references/prompt-template.md`：单张生图提示词模板。
 - `references/qa-checklist.md`：生成后检查和迭代规则。

@@ -5,7 +5,7 @@
 - IP 角色：**凯冰**（中文）/ **KevinBee**（英文）。
 - Skill 调用名：`$kevinbee-illustrations`；SKILL.md `name: kevinbee-illustrations`。
 - Skill 子文件夹：`kevinbee-illustrations/`（已从 `ian-xiaohei-illustrations` 重命名）。
-- 仓库克隆地址示例：`https://github.com/ruijayfeng/kevinbee-illustrations.git`。
+- GitHub 仓库名仍为 **kaibing-illustrations**（未随品牌改名）；克隆地址：`https://github.com/ruijayfeng/kaibing-illustrations.git`。本地 skill 文件夹为 `kevinbee-illustrations/`（与 GitHub 仓库名不一致，属正常）。
 - 角色设定文件：`kevinbee-illustrations/references/kevinbee-ip.md`。
 - 凯冰形象：白帽（正面居中红星）、冰蓝短发、猩红斗篷、黑色战斗服、2.5-3 头身 Q 版；禁用名「赤星 / CHIXING」、禁用旧「小黑 / Xiaohei」品牌。
 - NOTICE.md 项目名：`KevinBee Illustrations`；作者署名「凯冰 (KevinBee)」；联系方式 GitHub: ruijayfeng、X/Twitter: ruijayfeng、微信: STAR2023415、邮箱: fz.dev@foxmail.com（网站 ianneo.xyz 已删除）；微信二维码图片已删除（git rm）。

@@ -113,8 +113,8 @@
 克隆仓库：
 
 ```bash
-git clone https://github.com/ruijayfeng/kaibing-illustrations.git
-cd kaibing-illustrations
+git clone https://github.com/ruijayfeng/kevinbee-illustrations.git
+cd kevinbee-illustrations
 ```
 
 复制 skill 到 Codex skills 目录：
@@ -275,6 +275,6 @@ MIT License. See [LICENSE](LICENSE).
 
 ---
 
-## 原仓库
+## 关于本项目（开源署名与迁移）
 
-https://github.com/ruijayfeng/kaibing-illustrations
+本项目由「Kaibing 手绘隐喻插图」更名迁移为「KevinBee 手绘隐喻插图」，保留开源署名。原仓库地址 <https://github.com/ruijayfeng/kaibing-illustrations> 已重定向至当前仓库 <https://github.com/ruijayfeng/kevinbee-illustrations>。

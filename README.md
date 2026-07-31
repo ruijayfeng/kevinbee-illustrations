@@ -244,28 +244,12 @@ kevinbee-illustrations/
 
 ## 关于作者
 
-**凯冰 (KevinBee)** — 产品设计师 / 一人公司实践者 / AI Builder
-
-用 AI 团队打造一人公司。
+**凯冰 (KevinBee)** 
 
 - GitHub: [ruijayfeng](https://github.com/ruijayfeng)
 - X/Twitter: <https://github.com/ruijayfeng>
 - 微信: `STAR2023415`
 - 邮箱: fz.dev@foxmail.com
-
----
-
-## 继续探索
-
-这套凯冰配图 Skill，用于把文章里的抽象判断转化为可识别的手绘隐喻插图。
-
-如果你也在用 AI 做内容、知识库、工作流或产品化，可以继续看我的 GitHub：[ruijayfeng](https://github.com/ruijayfeng)。
-
-只想先观察，可以关注我的 [X/Twitter](https://github.com/ruijayfeng)。
-
-想了解 Indie Builders Club，加微信：`STAR2023415`，备注「OPC」。
-
-也可以直接搜索微信：`STAR2023415`。
 
 ---
 
@@ -277,4 +261,4 @@ MIT License. See [LICENSE](LICENSE).
 
 ## 关于本项目（开源署名与迁移）
 
-本项目由「Kaibing 手绘隐喻插图」更名迁移为「KevinBee 手绘隐喻插图」，保留开源署名。原仓库地址 <https://github.com/ruijayfeng/kaibing-illustrations> 已重定向至当前仓库 <https://github.com/ruijayfeng/kevinbee-illustrations>。
+详细见原fork仓库

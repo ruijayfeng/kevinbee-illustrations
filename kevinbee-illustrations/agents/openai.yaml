@@ -1,6 +1,6 @@
 interface:
-  display_name: "凯冰手绘隐喻配图"
-  short_description: "为中文文章生成由凯冰参与的清爽低科技手绘隐喻配图"
-  default_prompt: "Use $kevinbee-illustrations to 为这篇中文文章设计并生成几张凯冰手绘隐喻正文配图。"
+  display_name: "凯冰文章配图"
+  short_description: "用凯冰 V2 日系休闲形象生成清爽的文章隐喻配图"
+  default_prompt: "Use $kevinbee-illustrations 为这篇中文文章规划并生成几张凯冰 V2 正文配图。"
 policy:
   allow_implicit_invocation: true

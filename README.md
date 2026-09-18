@@ -1,257 +1,179 @@
-# 凯冰文章手绘隐喻插图
+# 凯冰文章配图
 
-> 把中文文章里的判断、流程、状态和隐喻，变成一张张由凯冰参与的白底手绘正文配图。
->
-> 16:9 横版 | 凯冰 IP | 纯白手绘 | 少量红橙蓝中文批注 | Codex Skill
+> 用固定的凯冰 V2 日系休闲形象，把中文文章中的判断、状态和关系转成清爽、有叙事感的正文插图。
 
----
+16:9 横版 · 白底轻手绘 · 日系休闲少女 · 少字或无字 · Codex Skill
 
-## 这个仓库是什么
+## 当前版本是什么
 
-凯冰文章手绘隐喻插图是一个 Codex Skill，用来指导 AI Agent 为中文文章、帖子、博客、Notion 文档和方法论内容生成正文配图。
+这是一个面向中文文章正文配图的 Codex Skill。它先理解文章中的认知锚点，再为每个锚点发明一个可见场景，让凯冰自然地经历、观察、选择或参与其中。
 
-它不是通用插画 prompt，也不是 PPT 信息图模板。它的核心目标是：先理解文章里的认知锚点，再把其中一个判断、流程、结构、状态或隐喻，变成一张有记忆点的 16:9 手绘解释图。
+当前正式支持：
 
-默认视觉 IP 是“凯冰”：白帽红星、冰蓝短发、猩红斗篷和黑色战斗服的 Q 版日系少女。凯冰不是立绘海报中的装饰角色，而是在手绘隐喻里认真操作、修补、连接和守护结构的行动主体。
+- 分析文章并规划 shot list
+- 生成单张或成组的正文配图
+- 修改已有正文图中的文字、留白或角色参与方式
+- 保持凯冰 V2 在不同文章场景中的身份一致性
 
-一句话：**让 AI 不只是“配一张图”，而是把文章里的一个关键认知动作画出来。**
+当前不把封面和角色设定稿伪装成正文配图处理。它们需要独立的画幅、信息层级和验收规则，将作为后续模式扩展。
 
----
+## 凯冰 V2
 
-## 适合谁用
+凯冰是一位清新、安静、有主见的日系休闲少女。她不是战士、工作人员或内容助手，也不是贴在画面角落的吉祥物。
 
-特别适合：
+稳定识别点：
 
-- 写中文文章，需要正文配图和文章插图的人
-- 做知识型内容、方法论内容、AI 工作流内容的人
-- 想把抽象判断画成具体隐喻的人
-- 想要一种比 PPT 信息图更轻、更怪、更有个人识别度的配图风格的人
-- 用 Codex 做内容生产，希望稳定复用一套视觉语言的人
+- 白色休闲棒球帽，正面红色五角星
+- 冰蓝色齐下巴短发
+- 柔和暗红色针织开衫
+- 象牙白上衣与藏青短裙
+- 红橙色眼睛与克制、自然的表情
 
-不适合：
+### 标准形态
 
-- 想要商业插画、品牌 KV 或精致扁平插画的人
-- 想要传统 PPT 信息图、复杂架构图或流程图的人
-- 想要儿童卡通、可爱 IP、表情包风格的人
-- 想把大量正文、长段解释或完整课程页塞进一张图里的人
-- 需要严格可编辑矢量源文件的人
+![凯冰 V2 标准形态](kevinbee-illustrations/assets/ip-reference/kevinbee-v2-standard.png)
 
----
+### 正文三头身形态
 
-## 它会产出什么
+![凯冰 V2 正文形态](kevinbee-illustrations/assets/ip-reference/kevinbee-v2-article.png)
 
-默认输出：
+## 正文配图效果
 
-- 16:9 横版正文配图
-- 一篇文章的 4-8 张 shot list
-- 每张图的主题、核心意思、结构类型、凯冰动作和中文标注建议
-- 最终 PNG 图片，保存到 workspace 的 `assets/<article-slug>-illustrations/`
+### 信息过载：从噪声中牵住一根清晰线索
 
-默认不输出：
+![信息过载](kevinbee-illustrations/assets/article-examples/information-overload.png)
 
-- PPTX / PDF / Keynote
-- SVG / HTML / Canvas 可编辑图
-- 商业海报或封面 KV
-- 大段文字型信息图
+### 决策路径：在分岔处发现一个值得靠近的方向
 
----
+![决策路径](kevinbee-illustrations/assets/article-examples/decision-path.png)
 
-## 视觉风格
+这些图片用于校准角色身份、线条、留白和参与方式，不是可复用的构图模板。每篇文章都应重新发明隐喻。
 
-这个 skill 默认使用“凯冰文章手绘隐喻配图”风格：
+## 视觉原则
 
-- 纯白背景，不要纸纹、米色、阴影、渐变
-- 黑色手绘线稿，细线，轻微抖动；凯冰和关键物件可有克制的柔和水彩上色
-- 大量留白，主体只占画面约 40%-60%
-- 少量红色、橙色、蓝色中文手写批注
-- 一张图只表达一个核心动作、结构、状态或隐喻
-- 凯冰必须参与核心动作，不能只是装饰或角色海报主体
-- 低科技、略带荒诞、清爽而坚韧；Q 版只改变比例，不卖萌、不幼稚
-
----
-
-## 示例效果
-
-### 标准全身立绘
-
-![标准全身立绘](examples/images/01-standard-full-body.png)
-
-### 三视图设定
-
-![三视图设定](examples/images/02-three-view-turnaround.png)
-
-### 半身情绪肖像
-
-![半身情绪肖像](examples/images/03-half-body-portrait.png)
-
-### 拔剑战斗
-
-![拔剑战斗](examples/images/04-sword-drawing.png)
-
-### 夜巡独行
-
-![夜巡独行](examples/images/05-night-patrol.png)
-
-### 守护姿态
-
-![守护姿态](examples/images/06-guard-pose.png)
-
-### 静态日常
-
-![静态日常](examples/images/07-daily-quiet.png)
-
-### Q版动作样例
-
-![Q版动作样例](examples/images/08-chibi-actions.png)
-
-这些图片是风格校准样例，不是构图模板。使用时应该从当前文章重新发明隐喻，不要照抄旧案例的物件和构图。
-
----
+- 默认 16:9 横版，白色或极浅暖白背景
+- 轻而自然的手绘线条，少量克制水彩
+- 一张图只表达一个核心关系
+- 凯冰通常占画面约 15%–30%
+- 默认无文字；确有必要时只使用 1–3 个短中文标注
+- 凯冰可以经历、观察、选择、同行或轻微影响场景，不必每次操作机器
+- 不做 PPT、复杂架构、真实 UI、战斗海报或角色站桩图
 
 ## 安装
-
-克隆仓库：
 
 ```bash
 git clone https://github.com/ruijayfeng/kevinbee-illustrations.git
 cd kevinbee-illustrations
-```
-
-复制 skill 到 Codex skills 目录：
-
-```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -R ./kevinbee-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-安装后，在 Codex 里使用：
+安装后可以这样调用：
 
 ```text
-Use $kevinbee-illustrations 为这篇中文文章设计并生成 5 张凯冰手绘隐喻正文配图。
+Use $kevinbee-illustrations 为这篇中文文章规划并生成几张凯冰 V2 正文配图。
 ```
 
----
+## 使用方式
 
-## 怎么用
-
-### 只做配图规划
+### 只规划，不生图
 
 ```text
-Use $kevinbee-illustrations 先不要生图。
-请分析下面这篇文章哪里值得配图，输出 5 张左右的 shot list。
-每张图写清楚：放在哪段后、主题、核心意思、结构类型、凯冰在做什么、建议中文标注词。
+Use $kevinbee-illustrations 先不要生成图片。
+分析下面这篇文章，挑选真正值得视觉化的认知锚点，给出 4–6 张 shot list。
 
 <粘贴文章>
 ```
 
-### 直接生成正文配图
+### 直接生成
 
 ```text
-Use $kevinbee-illustrations 把下面这篇文章生成 4 张凯冰手绘隐喻正文配图。
-要求：16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文手写批注。
+Use $kevinbee-illustrations 为下面这篇文章生成 4 张正文配图。
+保持凯冰 V2 形象一致；默认无文字，每张只表达一个核心关系。
 
 <粘贴文章>
 ```
 
-### 为单个概念生成一张图
+### 单个观点
 
 ```text
-Use $kevinbee-illustrations 为“信任不是喊出来的，而是一块证据一块证据铺过去”生成一张正文配图。
-画面要怪诞但清爽，凯冰必须承担核心动作，白帽红星清晰可见，不能画成战斗海报。
+Use $kevinbee-illustrations 为这个观点生成一张正文配图：
+
+真正的选择不是找到最亮的路，而是放弃其他同样可能的路。
 ```
 
-### 去掉图里的标题或错误文字
+### 修改已有图片
 
 ```text
-Use $kevinbee-illustrations 帮我编辑这张图，去掉左上角的“流程图”标题，其他内容保持不变。
+Use $kevinbee-illustrations 编辑这张图：
+保持凯冰身份、姿态和核心隐喻不变，只删除错误文字，不新增物件。
 ```
 
-更多示例见 [examples/prompts.md](examples/prompts.md)。
+更多调用示例见 [examples/prompts.md](examples/prompts.md)。
 
----
+## Skill 的工作方式
 
-## 工作流程
-
-这个 skill 的流程是：
-
-1. 读取文章、Markdown、Notion 内容、截图或用户给的主题
-2. 提炼核心观点、认知转折、流程结构和适合视觉化的段落
-3. 先输出 shot list：每张图只选一个认知锚点
-4. 为每张图选择结构类型：Workflow、系统局部、前后对比、角色状态、概念隐喻、方法分层、地图路线或小漫画分镜
-5. 重新发明一个低科技、怪诞但成立的物理隐喻
-6. 让凯冰承担核心动作
-7. 每张图单独调用图像模型生成
-8. 按 QA checklist 检查：白底、留白、凯冰动作与红星白帽、中文标注、非 PPT 感、非旧案例复刻
-9. 保存最终 PNG，并报告用途和路径
-
----
+1. 找出文章的核心判断、转折和关系变化
+2. 选择少量真正值得配图的认知锚点
+3. 为当前文章发明新的物理场景
+4. 让凯冰自然进入场景，而不是给她安排固定工作
+5. 使用 V2 正文形态作为身份参考逐张生成
+6. 检查画幅、身份、参与方式、原创性和文字
+7. 保存原图与最终 16:9 版本
 
 ## 目录结构
 
 ```text
 .
 ├── README.md
-├── LICENSE
-├── NOTICE.md
 ├── examples/
-│   ├── images/
-│   │   ├── 01-standard-full-body.png
-│   │   ├── 02-three-view-turnaround.png
-│   │   └── ...
 │   └── prompts.md
+├── docs/
+│   ├── character-direction-v2.md
+│   └── upstream-analysis.md
+├── archive/
+│   └── legacy-v1/                # 旧战斗形象与旧案例，不进入默认上下文
 └── kevinbee-illustrations/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
     ├── assets/
-    │   └── examples/
+    │   ├── manifest.yaml
+    │   ├── ip-reference/
+    │   └── article-examples/
     └── references/
-        ├── style-dna.md
-        ├── kevinbee-ip.md
+        ├── ip-core.md
+        ├── article-body-style.md
+        ├── article-body-prompt.md
         ├── composition-patterns.md
-        ├── prompt-template.md
         └── qa-checklist.md
 ```
 
-真正需要安装到 Codex 的是子目录：
+真正安装到 Codex 的目录是 `kevinbee-illustrations/`。
 
-```text
-kevinbee-illustrations/
-```
+## 设计上的单一真值
 
-根目录的 README、LICENSE、NOTICE 和 examples 是 GitHub 分享文档。
+- 凯冰是谁：只由 `references/ip-core.md` 定义
+- 正文图长什么样：由 `references/article-body-style.md` 定义
+- 如何构造提示词：由 `references/article-body-prompt.md` 定义
+- 如何发明隐喻：由 `references/composition-patterns.md` 定义
+- 如何验收：由 `references/qa-checklist.md` 定义
+- 哪张图该在何时加载：由 `assets/manifest.yaml` 定义
 
----
+这样修改角色服装或气质时，不必再同步五份互相重复的规则。
 
-## 注意事项
+## 上游与署名
 
-- 图片里的中文文字越短越稳定。
-- 每张图只讲一个核心结构，不要把文章做成说明书。
-- 凯冰必须承担核心动作；如果去掉凯冰画面仍然完全成立，说明凯冰太装饰了。
-- 示例图只用于校准线条密度、留白、颜色克制、凯冰参与方式和红星白帽识别点，不要复刻构图。
-- AI 图像模型可能出现错字、幻觉标签、风格漂移或多余标题，生成后需要检查。
-- 如果中文错字严重，优先减少标注词并重生成。
+本项目基于 [helloianneo/ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) 演化而来，继承了“认知锚点、一图一义、物理隐喻”的文章配图方法，并重新设计了 KevinBee 角色与生成结构。
 
+详细溯源与差异分析见 [docs/upstream-analysis.md](docs/upstream-analysis.md)。
 
----
+作者：凯冰（KevinBee）
 
-## 关于作者
-
-**凯冰 (KevinBee)** 
-
-- GitHub: [ruijayfeng](https://github.com/ruijayfeng)
-- X/Twitter: <https://github.com/ruijayfeng>
-- 微信: `STAR2023415`
-- 邮箱: fz.dev@foxmail.com
-
----
+- GitHub：[ruijayfeng](https://github.com/ruijayfeng)
+- 微信：`STAR2023415`
+- 邮箱：`fz.dev@foxmail.com`
 
 ## License
 
-MIT License. See [LICENSE](LICENSE).
-
----
-
-## 关于本项目（开源署名与迁移）
-
-详细见原fork仓库
+MIT License。详见 [LICENSE](LICENSE) 与 [NOTICE.md](NOTICE.md)。

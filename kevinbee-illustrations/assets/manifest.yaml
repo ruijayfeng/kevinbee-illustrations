@@ -1,0 +1,33 @@
+version: 2
+
+ip_reference:
+  - file: "ip-reference/kevinbee-v2-article.png"
+    role: "正文配图默认身份参考"
+    load_when: "生成或重画正文配图"
+    canonical: true
+  - file: "ip-reference/kevinbee-v2-standard.png"
+    role: "标准比例身份参考"
+    load_when: "需要确认服装、配色或角色整体轮廓"
+    canonical: true
+  - file: "ip-reference/expression-sheet.png"
+    role: "克制表情范围参考"
+    load_when: "当前配图由情绪或面部状态承载含义"
+    canonical: false
+  - file: "ip-reference/action-sheet.png"
+    role: "自然动作与姿态参考"
+    load_when: "角色动作容易漂移为站桩、工作或战斗姿态"
+    canonical: false
+
+article_examples:
+  - file: "article-examples/information-overload.png"
+    role: "经历型参与与信息过载示例"
+    use_for: "角色占比、留白、单一强调色"
+    copy_composition: false
+  - file: "article-examples/decision-path.png"
+    role: "选择型参与与路径隐喻示例"
+    use_for: "自然参与、轻线稿、无文字表达"
+    copy_composition: false
+
+excluded:
+  location: "../../archive/legacy-v1/"
+  reason: "旧战斗形象与旧隐喻案例，仅供迁移追溯，不进入默认生成上下文"

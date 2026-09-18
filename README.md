@@ -41,17 +41,15 @@
 
 ![凯冰 V2.1 头部结构](kevinbee-illustrations/assets/ip-reference/v2.1/02-head-construction-four-view.png)
 
-### 标准形态与正文形态
+### V2.2 正文轻 Q 形态母版
 
-![凯冰 V2.1 比例转换](kevinbee-illustrations/assets/ip-reference/v2.1/04-standard-to-article-scale.png)
+![凯冰 V2.2 正文轻 Q 形态](kevinbee-illustrations/assets/ip-reference/v2.2/00-q-form-master-front.png)
 
-### 正文紧凑形态母版
+### V2.2 正文轻 Q 形态四视图
 
-![凯冰 V2.1 正文形态](kevinbee-illustrations/assets/ip-reference/v2.1/03-article-form-master.png)
+![凯冰 V2.2 正文轻 Q 四视图](kevinbee-illustrations/assets/ip-reference/v2.2/01-q-form-four-view.png)
 
-### 正文紧凑形态四视图
-
-![凯冰 V2.1 正文四视图](kevinbee-illustrations/assets/ip-reference/v2.1/05-article-form-four-view.png)
+V2.2 不再把标准角色整体压矮。它在保持成年脸、总高度感和清楚骨架的前提下，相对放大头部、适度缩短躯干与四肢，并同步缩短开衫和裙长。四个角度来自同一张统一画布，服装节点与脚底线保持一致。
 
 ## 正文配图效果
 
@@ -133,7 +131,7 @@ Use $kevinbee-illustrations 编辑这张图：
 2. 选择少量真正值得配图的认知锚点
 3. 为当前文章发明新的物理场景
 4. 让凯冰自然进入场景，而不是给她安排固定工作
-5. 标准、正文和近景分别使用对应尺度的 V2.1 参考，不混用会冲突的角度图
+5. 标准与近景使用 V2.1 身份层，正文全身使用 V2.2 轻 Q 层，不混用会冲突的比例图
 6. 检查画幅、身份、参与方式、原创性和文字
 7. 保存原图与最终 16:9 版本
 

@@ -16,11 +16,11 @@ description: 为中文文章规划、生成或编辑凯冰 V2 风格的手绘隐
 ## 按需读取
 
 - 每次涉及凯冰形象时，先读 `references/ip-core.md`。这是角色唯一真值。
-- 需要生成、修改或核对角色时，读 `references/character-model-v2.1.md`，按目标角度选择最少的视觉参考。
+- 需要生成、修改或核对角色时，读 `references/character-model-v2.2.md`，按目标角度选择最少的视觉参考。
 - 规划 shot list 或发明隐喻时，读 `references/composition-patterns.md`。
 - 生成正文图时，再读 `references/article-body-style.md` 和 `references/article-body-prompt.md`。
 - 检查或修改图片时，读 `references/qa-checklist.md`。
-- 标准形态使用 `assets/ip-reference/v2.1/00-canonical-master.png`；正文全身优先使用 `assets/ip-reference/v2.1/03-article-form-master.png` 或 `article-views/` 中的对应角度。不要在正文全身生成中混用标准五视图。其他资产用途见 `assets/manifest.yaml`。
+- 标准形态使用 `assets/ip-reference/v2.1/00-canonical-master.png`；正文全身使用 `assets/ip-reference/v2.2/00-q-form-master-front.png` 或 `q-form-views/` 中的对应角度。不要在正文全身生成中混用标准五视图或旧 V2.1 三头身图。其他资产用途见 `assets/manifest.yaml`。
 
 ## 工作流
 
@@ -51,7 +51,7 @@ description: 为中文文章规划、生成或编辑凯冰 V2 风格的手绘隐
 
 - 只表达一个核心意思。
 - 默认 16:9 横版、白色或极浅暖白背景。
-- 使用 V2.1 正文形态参考；正面、侧面或背面构图直接加载正文角度图，不加载标准五视图。
+- 使用 V2.2 正文轻 Q 形态参考；正面、三分之四、侧面或背面构图直接加载对应角度图，不加载标准五视图或旧正文三头身图。
 - 让凯冰经历、观察、选择、靠近、跟随或影响场景；只有文章隐喻确实需要时才操作物件。
 - 默认不写字；文字确有必要时只保留 1–3 个短中文标注。
 - 为当前文章重新发明隐喻，不复刻案例。

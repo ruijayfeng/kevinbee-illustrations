@@ -1,6 +1,6 @@
 # 正文配图提示词组装
 
-每张图单独生成。常规正文全身以 `assets/ip-reference/v2.1/03-article-form-master.png` 为主要参考；纯正面、侧面或背面构图改用 `article-views/` 中最接近目标角度的单图。不要同时加载标准身份母版或标准五视图，它们会把正文身体拉长。头肩近景才使用标准身份母版与对应头部视图。
+每张图单独生成。常规正文全身以 `assets/ip-reference/v2.2/00-q-form-master-front.png` 为主要参考；三分之四、侧面或背面构图改用 `v2.2/q-form-views/` 中最接近目标角度的单图。不要同时加载标准身份母版、标准五视图或旧 V2.1 三头身图；它们会让比例重新争夺。头肩近景才使用标准身份母版与对应头部视图。
 
 不要复制一个永远不变的巨型提示词。按当前文章填充以下结构，删掉无关项。
 
@@ -9,7 +9,7 @@ Use case: illustration-story
 Asset type: standalone 16:9 Chinese article-body illustration
 
 Identity reference:
-Image 1 is the closest KevinBee V2.1 compact article-form reference. Preserve its identity, slightly enlarged head, shortened limbs, hair, hat, clothing construction, palette and angle structure. Static poses may remain strongly compressed; dynamic poses may lengthen only enough to stay natural and must remain visibly more compact than the standard character form.
+Image 1 is the closest KevinBee V2.2 light-chibi article-form reference. Preserve its adult identity, relatively enlarged head, clear shoulder-waist-hip structure, moderately shortened limbs, short high-hip cardigan, upper-thigh skirt, hair, hat, palette and angle structure. Keep the character's apparent standing height; do not create chibi form by shrinking the whole person or by turning the face and limbs childlike. Dynamic poses may lengthen only enough to stay natural and must remain visibly more compact than the standard character form.
 {从 ip-core.md 的“提示词身份片段”取用必要内容；参考图已经稳定时可缩短}
 
 Core idea:

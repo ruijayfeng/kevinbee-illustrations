@@ -37,9 +37,21 @@
 
 ![凯冰 V2.1 五视图](kevinbee-illustrations/assets/ip-reference/v2.1/01-turnaround-five-view.png)
 
-### 正文三头身形态
+### 头部四视图
 
-![凯冰 V2 正文形态](kevinbee-illustrations/assets/ip-reference/kevinbee-v2-article.png)
+![凯冰 V2.1 头部结构](kevinbee-illustrations/assets/ip-reference/v2.1/02-head-construction-four-view.png)
+
+### 标准形态与正文形态
+
+![凯冰 V2.1 比例转换](kevinbee-illustrations/assets/ip-reference/v2.1/04-standard-to-article-scale.png)
+
+### 正文紧凑形态母版
+
+![凯冰 V2.1 正文形态](kevinbee-illustrations/assets/ip-reference/v2.1/03-article-form-master.png)
+
+### 正文紧凑形态四视图
+
+![凯冰 V2.1 正文四视图](kevinbee-illustrations/assets/ip-reference/v2.1/05-article-form-four-view.png)
 
 ## 正文配图效果
 
@@ -121,7 +133,7 @@ Use $kevinbee-illustrations 编辑这张图：
 2. 选择少量真正值得配图的认知锚点
 3. 为当前文章发明新的物理场景
 4. 让凯冰自然进入场景，而不是给她安排固定工作
-5. 使用 V2.1 身份母版锁定角色，再用正文形态约束三头身比例
+5. 标准、正文和近景分别使用对应尺度的 V2.1 参考，不混用会冲突的角度图
 6. 检查画幅、身份、参与方式、原创性和文字
 7. 保存原图与最终 16:9 版本
 

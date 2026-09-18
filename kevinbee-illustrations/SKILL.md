@@ -20,7 +20,7 @@ description: 为中文文章规划、生成或编辑凯冰 V2 风格的手绘隐
 - 规划 shot list 或发明隐喻时，读 `references/composition-patterns.md`。
 - 生成正文图时，再读 `references/article-body-style.md` 和 `references/article-body-prompt.md`。
 - 检查或修改图片时，读 `references/qa-checklist.md`。
-- 需要视觉身份参考时，先使用 `assets/ip-reference/v2.1/00-canonical-master.png`；正文再配合 `assets/ip-reference/kevinbee-v2-article.png` 约束比例。其他资产的用途见 `assets/manifest.yaml`，不要默认加载全部图片。
+- 标准形态使用 `assets/ip-reference/v2.1/00-canonical-master.png`；正文全身优先使用 `assets/ip-reference/v2.1/03-article-form-master.png` 或 `article-views/` 中的对应角度。不要在正文全身生成中混用标准五视图。其他资产用途见 `assets/manifest.yaml`。
 
 ## 工作流
 
@@ -51,7 +51,7 @@ description: 为中文文章规划、生成或编辑凯冰 V2 风格的手绘隐
 
 - 只表达一个核心意思。
 - 默认 16:9 横版、白色或极浅暖白背景。
-- 使用 V2.1 身份母版与正文形态参考；侧面或背面构图再按角色模型文件加载一个对应角度。
+- 使用 V2.1 正文形态参考；正面、侧面或背面构图直接加载正文角度图，不加载标准五视图。
 - 让凯冰经历、观察、选择、靠近、跟随或影响场景；只有文章隐喻确实需要时才操作物件。
 - 默认不写字；文字确有必要时只保留 1–3 个短中文标注。
 - 为当前文章重新发明隐喻，不复刻案例。

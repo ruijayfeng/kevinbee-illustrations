@@ -22,10 +22,10 @@
 
 ### 正文形态
 
-- 约 2.8–3.2 头身。
+- 静态设定约 3.1–3.4 头身；走、跑、蹲等动态场景可自然延展到约 3.5–4.2 头身，但不能回到标准形态的修长比例。
 - 头部稍大，身体紧凑，手脚简化但动作清楚。
 - 五官、发丝和衣褶适度简化，缩小后仍可辨认。
-- 同时使用 `assets/ip-reference/v2.1/00-canonical-master.png` 锁定身份，使用 `assets/ip-reference/kevinbee-v2-article.png` 约束三头身压缩方式。
+- 常规视角使用 `assets/ip-reference/v2.1/03-article-form-master.png`；特殊角度使用 `assets/ip-reference/v2.1/article-views/` 中的对应单图。标准比例母版用于人工核对身份，不与正文全身角度图默认混载。
 
 ### 标准形态
 
@@ -33,7 +33,7 @@
 - 可增加发丝、服装结构和表情细节，但保持轻盈、休闲。
 - 使用 `assets/ip-reference/v2.1/00-canonical-master.png` 作为唯一身份母版；角度结构按 `references/character-model-v2.1.md` 选择对应视图。
 
-两种形态是同一角色，只改变比例和细节密度。
+两种形态是同一角色，只改变比例和细节密度。正文比例以“紧凑、头部稍大、动作自然”为判断，不为追求精确头身数制造幼态或肢体变形。
 
 ## 默认服装
 
@@ -74,5 +74,5 @@
 需要文字描述身份时，从本段取用，不在其他文件维护第二份版本：
 
 ```text
-KevinBee, an adult Japanese-casual illustrated woman in a compact three-head-tall editorial form: a lived-in white baseball cap with one clear centered red five-point star, airy chin-length ice-blue bob hair, restrained red-orange eyes, a calm independent expression, a muted dark-red hip-length knit cardigan, ivory crew-neck top, navy A-line skirt, charcoal ankle socks, and light casual sneakers. She is a complete character with no fixed occupation—not a worker, assistant, fighter, mascot, idol, or child.
+KevinBee, an adult Japanese-casual illustrated woman in a compact editorial form with a slightly enlarged head and shortened limbs: a lived-in white baseball cap with one clear centered red five-point star, airy chin-length ice-blue bob hair, restrained red-orange eyes, a calm independent expression, a muted dark-red hip-length knit cardigan, ivory crew-neck top, navy A-line skirt, charcoal ankle socks, and light casual sneakers. She is a complete character with no fixed occupation—not a worker, assistant, fighter, mascot, idol, or child.
 ```

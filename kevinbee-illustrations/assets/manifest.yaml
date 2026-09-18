@@ -10,6 +10,51 @@ ip_reference:
     role: "V2.1 五视图人工总览"
     load_when: "人工检查跨角度结构；生成时优先加载对应单视图"
     canonical: true
+  - file: "ip-reference/v2.1/02-head-construction-four-view.png"
+    role: "V2.1 头部四视图人工总览"
+    load_when: "人工核对帽型、五官、刘海、侧发束和后发；生成时使用对应单视图"
+    canonical: true
+  - file: "ip-reference/v2.1/03-article-form-master.png"
+    role: "V2.1 正文紧凑比例母版"
+    load_when: "生成或重画正文配图；与 V2.1 身份母版配合"
+    canonical: true
+    priority: 2
+  - file: "ip-reference/v2.1/04-standard-to-article-scale.png"
+    role: "标准形态到正文形态的比例转换人工对照"
+    load_when: "人工检查比例转换，不作为普通生成参考"
+    canonical: false
+  - file: "ip-reference/v2.1/05-article-form-four-view.png"
+    role: "V2.1 正文紧凑形态四视图人工总览"
+    load_when: "人工检查正文形态跨角度一致性；生成时使用对应单视图"
+    canonical: true
+  - file: "ip-reference/v2.1/article-views/01-front.png"
+    role: "V2.1 正文紧凑形态正面参考"
+    load_when: "正文正面全身构图"
+    canonical: true
+  - file: "ip-reference/v2.1/article-views/03-left-profile.png"
+    role: "V2.1 正文紧凑形态左向侧面参考"
+    load_when: "正文侧面全身构图"
+    canonical: true
+  - file: "ip-reference/v2.1/article-views/04-back.png"
+    role: "V2.1 正文紧凑形态背面参考"
+    load_when: "正文背面全身构图"
+    canonical: true
+  - file: "ip-reference/v2.1/head-views/01-front.png"
+    role: "V2.1 正面头部与五官细节参考"
+    load_when: "正面头肩近景或需要核对五官"
+    canonical: true
+  - file: "ip-reference/v2.1/head-views/02-front-three-quarter.png"
+    role: "V2.1 正面三分之四头部结构参考"
+    load_when: "主要身份视角的头肩近景"
+    canonical: true
+  - file: "ip-reference/v2.1/head-views/03-left-profile.png"
+    role: "V2.1 左向侧面头部结构参考"
+    load_when: "侧面头肩近景"
+    canonical: true
+  - file: "ip-reference/v2.1/head-views/04-back.png"
+    role: "V2.1 后脑、帽后扣与后发结构参考"
+    load_when: "背面头肩近景"
+    canonical: true
   - file: "ip-reference/v2.1/turnaround-views/01-front.png"
     role: "V2.1 正面结构参考"
     load_when: "正面、正面近景或对称构图"
@@ -27,9 +72,9 @@ ip_reference:
     load_when: "背影构图"
     canonical: true
   - file: "ip-reference/kevinbee-v2-article.png"
-    role: "正文三头身压缩方式参考"
-    load_when: "生成或重画正文配图；与 V2.1 身份母版配合"
-    canonical: true
+    role: "V2 旧正文形态过渡参考"
+    load_when: "仅做迁移追溯，不用于决定新图比例"
+    canonical: false
   - file: "ip-reference/kevinbee-v2-standard.png"
     role: "V2 旧标准比例过渡参考"
     load_when: "仅做迁移追溯，不用于决定新图身份"

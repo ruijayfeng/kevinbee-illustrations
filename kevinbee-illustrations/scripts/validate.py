@@ -36,6 +36,12 @@ STALE_REFERENCES = (
     "references/prompt-template.md",
     "assets/examples/",
 )
+STALE_COPY = (
+    "猩红色连帽斗篷",
+    "黑色战斗裙",
+    "剑是动作工具",
+    "像一位安静的现场操作员",
+)
 
 
 def png_dimensions(path: Path) -> tuple[int, int]:
@@ -94,6 +100,10 @@ def main() -> int:
             if stale in text:
                 relative = text_path.relative_to(SKILL_ROOT)
                 errors.append(f"stale active reference in {relative}: {stale}")
+        for stale in STALE_COPY:
+            if stale in text:
+                relative = text_path.relative_to(SKILL_ROOT)
+                errors.append(f"stale V1 character copy in {relative}: {stale}")
 
     manifest_path = SKILL_ROOT / "assets/manifest.yaml"
     if manifest_path.is_file():

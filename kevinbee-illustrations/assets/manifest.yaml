@@ -1,14 +1,39 @@
-version: 2
+version: 2.1
 
 ip_reference:
+  - file: "ip-reference/v2.1/00-canonical-master.png"
+    role: "V2.1 唯一身份母版：脸、体型、服装、配色与整体气质"
+    load_when: "任何新图需要锁定凯冰身份"
+    canonical: true
+    priority: 1
+  - file: "ip-reference/v2.1/01-turnaround-five-view.png"
+    role: "V2.1 五视图人工总览"
+    load_when: "人工检查跨角度结构；生成时优先加载对应单视图"
+    canonical: true
+  - file: "ip-reference/v2.1/turnaround-views/01-front.png"
+    role: "V2.1 正面结构参考"
+    load_when: "正面、正面近景或对称构图"
+    canonical: true
+  - file: "ip-reference/v2.1/turnaround-views/03-left-profile.png"
+    role: "V2.1 左向纯侧面结构参考"
+    load_when: "纯侧面或接近侧面的构图"
+    canonical: true
+  - file: "ip-reference/v2.1/turnaround-views/04-rear-three-quarter.png"
+    role: "V2.1 后三分之四结构参考"
+    load_when: "回头、后侧或背向构图"
+    canonical: true
+  - file: "ip-reference/v2.1/turnaround-views/05-back.png"
+    role: "V2.1 正背面结构参考"
+    load_when: "背影构图"
+    canonical: true
   - file: "ip-reference/kevinbee-v2-article.png"
-    role: "正文配图默认身份参考"
-    load_when: "生成或重画正文配图"
+    role: "正文三头身压缩方式参考"
+    load_when: "生成或重画正文配图；与 V2.1 身份母版配合"
     canonical: true
   - file: "ip-reference/kevinbee-v2-standard.png"
-    role: "标准比例身份参考"
-    load_when: "需要确认服装、配色或角色整体轮廓"
-    canonical: true
+    role: "V2 旧标准比例过渡参考"
+    load_when: "仅做迁移追溯，不用于决定新图身份"
+    canonical: false
   - file: "ip-reference/expression-sheet.png"
     role: "克制表情范围参考"
     load_when: "当前配图由情绪或面部状态承载含义"

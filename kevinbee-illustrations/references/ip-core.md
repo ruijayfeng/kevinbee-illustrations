@@ -25,13 +25,13 @@
 - 约 2.8–3.2 头身。
 - 头部稍大，身体紧凑，手脚简化但动作清楚。
 - 五官、发丝和衣褶适度简化，缩小后仍可辨认。
-- 使用 `assets/ip-reference/kevinbee-v2-article.png` 作为首选身份参考。
+- 同时使用 `assets/ip-reference/v2.1/00-canonical-master.png` 锁定身份，使用 `assets/ip-reference/kevinbee-v2-article.png` 约束三头身压缩方式。
 
 ### 标准形态
 
 - 约 5–5.5 头身。
 - 可增加发丝、服装结构和表情细节，但保持轻盈、休闲。
-- 使用 `assets/ip-reference/kevinbee-v2-standard.png` 作为参考。
+- 使用 `assets/ip-reference/v2.1/00-canonical-master.png` 作为唯一身份母版；角度结构按 `references/character-model-v2.1.md` 选择对应视图。
 
 两种形态是同一角色，只改变比例和细节密度。
 
@@ -42,7 +42,7 @@
 - 腰部至胯部长度的柔和暗红色针织开衫；落肩、略宽松袖、简单罗纹、完整下摆。
 - 藏青或炭灰 A 字短裙；动作幅度较大时可替换为同色宽松短裤。
 - 深灰短袜。
-- 米白或浅灰休闲鞋。
+- 米白或浅灰系带休闲鞋，深炭灰鞋底。
 
 服装可以因季节和场景产生小幅变化，但不得同时改变帽子、发型和红色色块。
 

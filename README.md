@@ -29,9 +29,13 @@
 - 象牙白上衣与藏青短裙
 - 红橙色眼睛与克制、自然的表情
 
-### 标准形态
+### V2.1 身份母版
 
-![凯冰 V2 标准形态](kevinbee-illustrations/assets/ip-reference/kevinbee-v2-standard.png)
+![凯冰 V2.1 身份母版](kevinbee-illustrations/assets/ip-reference/v2.1/00-canonical-master.png)
+
+### 五视图结构
+
+![凯冰 V2.1 五视图](kevinbee-illustrations/assets/ip-reference/v2.1/01-turnaround-five-view.png)
 
 ### 正文三头身形态
 
@@ -117,7 +121,7 @@ Use $kevinbee-illustrations 编辑这张图：
 2. 选择少量真正值得配图的认知锚点
 3. 为当前文章发明新的物理场景
 4. 让凯冰自然进入场景，而不是给她安排固定工作
-5. 使用 V2 正文形态作为身份参考逐张生成
+5. 使用 V2.1 身份母版锁定角色，再用正文形态约束三头身比例
 6. 检查画幅、身份、参与方式、原创性和文字
 7. 保存原图与最终 16:9 版本
 

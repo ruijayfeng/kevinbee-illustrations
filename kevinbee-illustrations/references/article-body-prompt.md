@@ -1,6 +1,6 @@
 # 正文配图提示词组装
 
-每张图单独生成。优先把 `assets/ip-reference/kevinbee-v2-article.png` 作为身份参考图；只有需要表情或动作校准时，才额外读取对应参考资产。
+每张图单独生成。默认使用 `assets/ip-reference/v2.1/00-canonical-master.png` 锁定身份，并用 `assets/ip-reference/kevinbee-v2-article.png` 约束三头身压缩方式。纯侧面或背面构图按 `character-model-v2.1.md` 增加对应角度图，形成“身份 + 比例 + 角度”三张参考；不要用角度图替换正文形态图。常规视角只有在表情或动作确实承载含义时才增加第三张参考。
 
 不要复制一个永远不变的巨型提示词。按当前文章填充以下结构，删掉无关项。
 
@@ -9,7 +9,7 @@ Use case: illustration-story
 Asset type: standalone 16:9 Chinese article-body illustration
 
 Identity reference:
-Use the provided KevinBee V2 article-form image as the strict character identity reference.
+Image 1 is the KevinBee V2.1 canonical identity master; preserve its face, hair, hat, clothing construction and palette. Image 2 defines the compact article-body proportions. For a strict side or back composition, Image 3 defines the required angle structure without changing Image 2's body scale.
 {从 ip-core.md 的“提示词身份片段”取用必要内容；参考图已经稳定时可缩短}
 
 Core idea:

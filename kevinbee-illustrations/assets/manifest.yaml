@@ -5,10 +5,9 @@ ip_reference:
     role: "V2.1 唯一身份母版：脸、体型、服装、配色与整体气质"
     load_when: "任何新图需要锁定凯冰身份"
     canonical: true
-    priority: 1
   - file: "ip-reference/v2.1/01-turnaround-five-view.png"
     role: "V2.1 五视图人工总览"
-    load_when: "人工检查跨角度结构；生成时优先加载对应单视图"
+    load_when: "人工检查跨角度结构；生成时按需加载对应单视图"
     canonical: true
   - file: "ip-reference/v2.1/02-head-construction-four-view.png"
     role: "V2.1 头部四视图人工总览"
@@ -42,7 +41,6 @@ ip_reference:
     role: "V2.2 正文轻 Q 形态正面母版：成年感、内部比例与服装长度"
     load_when: "常规正文全身构图，或需要锁定轻 Q 比例"
     canonical: true
-    priority: 2
   - file: "ip-reference/v2.2/01-q-form-four-view.png"
     role: "V2.2 正文轻 Q 形态四视图比例真值"
     load_when: "人工检查头顶、肩线、腰线、衣摆、裙摆、膝盖和脚底跨角度一致性"
@@ -109,12 +107,22 @@ ip_reference:
     canonical: false
   - file: "ip-reference/v2.2/02-expression-sheet.png"
     role: "V2.2 成年感克制表情范围：中性、专注、疑惑、思考、微笑、无奈、倔强、满足"
-    load_when: "情绪或面部状态承载正文含义；只补充表情，不改变脸型"
-    canonical: true
+    load_when: "人工总览情绪范围；普通生成按需使用单张表情，不默认加载整板"
+    canonical: false
   - file: "ip-reference/v2.2/03-action-sheet.png"
     role: "V2.2 动态比例范围：走、坐、蹲、伸手、平衡与回头"
-    load_when: "正文全身动作复杂，容易拉回标准比例或变成幼态"
-    canonical: true
+    load_when: "人工总览动作范围；普通生成按需使用单张动作，不默认加载整板"
+    canonical: false
+
+optional_variation_pools:
+  - location: "ip-reference/v2.2/expression-views/"
+    role: "八种克制表情的单张纠偏样本"
+    select_when: "情绪承担含义且仅靠文字容易换脸时，从语义相近项中选择一张；允许生成新的细微表情"
+    copy_pose: false
+  - location: "ip-reference/v2.2/action-views/"
+    role: "六种自然动作的单张比例纠偏样本"
+    select_when: "复杂动作容易拉长或幼化时，从结构相近项中选择一张；允许生成未收录的新动作"
+    copy_pose: false
 
 article_examples:
   - file: "article-examples/information-overload.png"

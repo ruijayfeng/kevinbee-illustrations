@@ -100,13 +100,21 @@ ip_reference:
     load_when: "仅做迁移追溯，不用于决定新图身份"
     canonical: false
   - file: "ip-reference/expression-sheet.png"
-    role: "克制表情范围参考"
-    load_when: "当前配图由情绪或面部状态承载含义"
+    role: "旧 V2 表情范围参考"
+    load_when: "仅做迁移追溯；新图使用 V2.2 表情表"
     canonical: false
   - file: "ip-reference/action-sheet.png"
-    role: "自然动作与姿态参考"
-    load_when: "角色动作容易漂移为站桩、工作或战斗姿态"
+    role: "旧 V2 动作范围参考"
+    load_when: "仅做迁移追溯；新图使用 V2.2 动作表"
     canonical: false
+  - file: "ip-reference/v2.2/02-expression-sheet.png"
+    role: "V2.2 成年感克制表情范围：中性、专注、疑惑、思考、微笑、无奈、倔强、满足"
+    load_when: "情绪或面部状态承载正文含义；只补充表情，不改变脸型"
+    canonical: true
+  - file: "ip-reference/v2.2/03-action-sheet.png"
+    role: "V2.2 动态比例范围：走、坐、蹲、伸手、平衡与回头"
+    load_when: "正文全身动作复杂，容易拉回标准比例或变成幼态"
+    canonical: true
 
 article_examples:
   - file: "article-examples/information-overload.png"
@@ -117,6 +125,16 @@ article_examples:
     role: "选择型参与与路径隐喻示例"
     use_for: "自然参与、轻线稿、无文字表达"
     copy_composition: false
+  - file: "article-examples/v2.2-choice-release.png"
+    role: "V2.2 动态正文前向测试：选择一个方向并放开其他可能"
+    use_for: "轻 Q 角色缩小进 16:9 场景后的比例、成年感与非职业化参与"
+    copy_composition: false
+
+forward_tests:
+  - file: "forward-tests/v2.2-choice-release-source.png"
+    role: "V2.2 选择与放下场景的原始生成文件"
+    use_for: "裁切追溯，不作为默认生成参考"
+    canonical: false
 
 excluded:
   location: "../../archive/legacy-v1/"

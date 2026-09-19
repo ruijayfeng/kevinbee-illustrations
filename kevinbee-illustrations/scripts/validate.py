@@ -36,6 +36,8 @@ REQUIRED_FILES = (
     "assets/ip-reference/v2.2/q-form-views/02-front-three-quarter.png",
     "assets/ip-reference/v2.2/q-form-views/03-left-profile.png",
     "assets/ip-reference/v2.2/q-form-views/04-back.png",
+    "assets/ip-reference/v2.2/02-expression-sheet.png",
+    "assets/ip-reference/v2.2/03-action-sheet.png",
     "assets/ip-reference/v2.1/head-views/01-front.png",
     "assets/ip-reference/v2.1/head-views/02-front-three-quarter.png",
     "assets/ip-reference/v2.1/head-views/03-left-profile.png",
@@ -50,6 +52,8 @@ REQUIRED_FILES = (
     "assets/ip-reference/action-sheet.png",
     "assets/article-examples/information-overload.png",
     "assets/article-examples/decision-path.png",
+    "assets/article-examples/v2.2-choice-release.png",
+    "assets/forward-tests/v2.2-choice-release-source.png",
 )
 
 ACTIVE_TEXT_GLOBS = ("*.md", "*.yaml")

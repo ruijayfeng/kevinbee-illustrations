@@ -51,6 +51,12 @@
 
 V2.2 不再把标准角色整体压矮。它在保持成年脸、总高度感和清楚骨架的前提下，相对放大头部、适度缩短躯干与四肢，并同步缩短开衫和裙长。四个角度来自同一张统一画布，服装节点与脚底线保持一致。
 
+### V2.2 表情与动作范围
+
+![凯冰 V2.2 表情表](kevinbee-illustrations/assets/ip-reference/v2.2/02-expression-sheet.png)
+
+![凯冰 V2.2 动作表](kevinbee-illustrations/assets/ip-reference/v2.2/03-action-sheet.png)
+
 ## 正文配图效果
 
 ### 信息过载：从噪声中牵住一根清晰线索
@@ -60,6 +66,10 @@ V2.2 不再把标准角色整体压矮。它在保持成年脸、总高度感和
 ### 决策路径：在分岔处发现一个值得靠近的方向
 
 ![决策路径](kevinbee-illustrations/assets/article-examples/decision-path.png)
+
+### 选择与放下：牵住一个方向，同时放开其他可能
+
+![选择与放下](kevinbee-illustrations/assets/article-examples/v2.2-choice-release.png)
 
 这些图片用于校准角色身份、线条、留白和参与方式，不是可复用的构图模板。每篇文章都应重新发明隐喻。
 

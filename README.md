@@ -6,7 +6,7 @@
 
 ## 当前版本是什么
 
-这是一个面向中文文章正文配图的 Codex Skill。它先理解文章中的认知锚点，再为每个锚点发明一个可见场景，让凯冰自然地经历、观察、选择或参与其中。
+这是一个面向中文文章正文配图的 Codex Skill。它先理解文章中的认知锚点，再为每个锚点发明一个可见场景，让凯冰进入场景的核心因果关系。
 
 当前正式支持：
 
@@ -80,7 +80,7 @@ V2.2 不再把标准角色整体压矮。它在保持成年脸、总高度感和
 - 一张图只表达一个核心关系
 - 凯冰通常占画面约 15%–30%
 - 默认无文字；确有必要时只使用 1–3 个短中文标注
-- 凯冰可以经历、观察、选择、同行或轻微影响场景，不必每次操作机器
+- 凯冰可以经历、选择、承受、同行或轻微影响场景，不必每次操作机器；单纯旁观不算参与
 - 不做 PPT、复杂架构、真实 UI、战斗海报或角色站桩图
 
 ### 固定身份，开放表达
@@ -147,7 +147,7 @@ Use $kevinbee-illustrations 编辑这张图：
 1. 找出文章的核心判断、转折和关系变化
 2. 选择少量真正值得配图的认知锚点
 3. 为当前文章发明新的物理场景
-4. 让凯冰自然进入场景，而不是给她安排固定工作
+4. 让凯冰进入核心因果关系，而不是旁观或承担固定工作
 5. 标准与近景使用 V2.1 身份层，正文全身使用 V2.2 轻 Q 层，不混用会冲突的比例图
 6. 检查画幅、身份、参与方式、原创性和文字
 7. 保存原图与最终 16:9 版本
@@ -163,7 +163,10 @@ Use $kevinbee-illustrations 编辑这张图：
 │   ├── character-direction-v2.md
 │   └── upstream-analysis.md
 ├── archive/
-│   └── legacy-v1/                # 旧战斗形象与旧案例，不进入默认上下文
+│   ├── legacy-v1/                # 旧战斗形象与旧案例
+│   └── development-v2/           # V2 探索、废弃比例与过渡资产
+├── tests/
+│   └── article-body/             # 前向测试、失败对照、原图与最终裁切
 └── kevinbee-illustrations/
     ├── SKILL.md
     ├── agents/
@@ -172,26 +175,30 @@ Use $kevinbee-illustrations 编辑这张图：
     │   ├── manifest.yaml
     │   ├── ip-reference/
     │   └── article-examples/
-    └── references/
-        ├── ip-core.md
-        ├── article-body-style.md
-        ├── article-body-prompt.md
-        ├── composition-patterns.md
-        └── qa-checklist.md
+    ├── references/
+    │   ├── ip-core.md
+    │   ├── character-model-v2.2.md
+    │   ├── article-body-style.md
+    │   ├── article-body-prompt.md
+    │   ├── composition-patterns.md
+    │   └── qa-checklist.md
+    └── scripts/
+        └── validate.py
 ```
 
-真正安装到 Codex 的目录是 `kevinbee-illustrations/`。
+真正安装到 Codex 的目录只有 `kevinbee-illustrations/`。`archive/` 和 `tests/` 保留设计证据与前向测试，但不进入默认生成上下文。
 
 ## 设计上的单一真值
 
 - 凯冰是谁：只由 `references/ip-core.md` 定义
+- 比例、角度与参考选择：由 `references/character-model-v2.2.md` 定义
 - 正文图长什么样：由 `references/article-body-style.md` 定义
 - 如何构造提示词：由 `references/article-body-prompt.md` 定义
 - 如何发明隐喻：由 `references/composition-patterns.md` 定义
 - 如何验收：由 `references/qa-checklist.md` 定义
 - 哪张图该在何时加载：由 `assets/manifest.yaml` 定义
 
-这样修改角色服装或气质时，不必再同步五份互相重复的规则。
+依赖顺序是：角色身份 → 角色结构 → 隐喻构图 → 正文风格 → 提示词 → QA。后层不得重写前层，测试和历史资产也不得进入运行时清单。
 
 ## 上游与署名
 

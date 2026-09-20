@@ -22,52 +22,6 @@ REQUIRED_FILES = (
     "references/composition-patterns.md",
     "references/qa-checklist.md",
     "assets/manifest.yaml",
-    "assets/ip-reference/v2.1/00-canonical-master.png",
-    "assets/ip-reference/v2.1/01-turnaround-five-view.png",
-    "assets/ip-reference/v2.1/02-head-construction-four-view.png",
-    "assets/ip-reference/v2.1/03-article-form-master.png",
-    "assets/ip-reference/v2.1/04-standard-to-article-scale.png",
-    "assets/ip-reference/v2.1/05-article-form-four-view.png",
-    "assets/ip-reference/v2.1/article-views/01-front.png",
-    "assets/ip-reference/v2.1/article-views/03-left-profile.png",
-    "assets/ip-reference/v2.1/article-views/04-back.png",
-    "assets/ip-reference/v2.2/00-q-form-master-front.png",
-    "assets/ip-reference/v2.2/01-q-form-four-view.png",
-    "assets/ip-reference/v2.2/q-form-views/02-front-three-quarter.png",
-    "assets/ip-reference/v2.2/q-form-views/03-left-profile.png",
-    "assets/ip-reference/v2.2/q-form-views/04-back.png",
-    "assets/ip-reference/v2.2/02-expression-sheet.png",
-    "assets/ip-reference/v2.2/03-action-sheet.png",
-    "assets/ip-reference/v2.2/expression-views/01-calm-neutral.png",
-    "assets/ip-reference/v2.2/expression-views/02-focused.png",
-    "assets/ip-reference/v2.2/expression-views/03-slight-doubt.png",
-    "assets/ip-reference/v2.2/expression-views/04-thoughtful.png",
-    "assets/ip-reference/v2.2/expression-views/05-restrained-smile.png",
-    "assets/ip-reference/v2.2/expression-views/06-mild-helplessness.png",
-    "assets/ip-reference/v2.2/expression-views/07-quiet-stubbornness.png",
-    "assets/ip-reference/v2.2/expression-views/08-peaceful-satisfaction.png",
-    "assets/ip-reference/v2.2/action-views/01-walking.png",
-    "assets/ip-reference/v2.2/action-views/02-seated.png",
-    "assets/ip-reference/v2.2/action-views/03-crouching.png",
-    "assets/ip-reference/v2.2/action-views/04-reaching.png",
-    "assets/ip-reference/v2.2/action-views/05-balancing.png",
-    "assets/ip-reference/v2.2/action-views/06-turning-back.png",
-    "assets/ip-reference/v2.1/head-views/01-front.png",
-    "assets/ip-reference/v2.1/head-views/02-front-three-quarter.png",
-    "assets/ip-reference/v2.1/head-views/03-left-profile.png",
-    "assets/ip-reference/v2.1/head-views/04-back.png",
-    "assets/ip-reference/v2.1/turnaround-views/01-front.png",
-    "assets/ip-reference/v2.1/turnaround-views/03-left-profile.png",
-    "assets/ip-reference/v2.1/turnaround-views/04-rear-three-quarter.png",
-    "assets/ip-reference/v2.1/turnaround-views/05-back.png",
-    "assets/ip-reference/kevinbee-v2-article.png",
-    "assets/ip-reference/kevinbee-v2-standard.png",
-    "assets/ip-reference/expression-sheet.png",
-    "assets/ip-reference/action-sheet.png",
-    "assets/article-examples/information-overload.png",
-    "assets/article-examples/decision-path.png",
-    "assets/article-examples/v2.2-choice-release.png",
-    "assets/forward-tests/v2.2-choice-release-source.png",
 )
 
 ACTIVE_TEXT_GLOBS = ("*.md", "*.yaml")
@@ -150,9 +104,36 @@ def main() -> int:
     manifest_path = SKILL_ROOT / "assets/manifest.yaml"
     if manifest_path.is_file():
         manifest = manifest_path.read_text(encoding="utf-8")
-        for relative in re.findall(r'^\s*- file: "([^"]+)"', manifest, re.MULTILINE):
+        declared_files = set(
+            re.findall(r'^\s*- file: "([^"]+)"', manifest, re.MULTILINE)
+        )
+        declared_files.update(
+            re.findall(r'^\s*(?:- )?overview: "([^"]+)"', manifest, re.MULTILINE)
+        )
+        declared_locations = {
+            relative
+            for relative in re.findall(
+                r'^\s*(?:- )?location: "([^"]+)"', manifest, re.MULTILINE
+            )
+            if not relative.startswith("../")
+        }
+
+        for relative in sorted(declared_files):
             if not (SKILL_ROOT / "assets" / relative).is_file():
                 errors.append(f"manifest points to missing asset: {relative}")
+
+        for relative in sorted(declared_locations):
+            if not (SKILL_ROOT / "assets" / relative).is_dir():
+                errors.append(f"manifest points to missing asset directory: {relative}")
+
+        for image_path in sorted((SKILL_ROOT / "assets").rglob("*.png")):
+            relative = image_path.relative_to(SKILL_ROOT / "assets").as_posix()
+            covered_by_pool = any(
+                relative.startswith(location.rstrip("/") + "/")
+                for location in declared_locations
+            )
+            if relative not in declared_files and not covered_by_pool:
+                errors.append(f"asset is not routed by manifest: {relative}")
 
     article_examples = SKILL_ROOT / "assets/article-examples"
     if article_examples.is_dir():

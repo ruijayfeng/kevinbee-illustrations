@@ -1,149 +1,94 @@
 version: 2.2
 
-ip_reference:
-  - file: "ip-reference/v2.1/00-canonical-master.png"
-    role: "V2.1 唯一身份母版：脸、体型、服装、配色与整体气质"
-    load_when: "任何新图需要锁定凯冰身份"
-    canonical: true
-  - file: "ip-reference/v2.1/01-turnaround-five-view.png"
-    role: "V2.1 五视图人工总览"
-    load_when: "人工检查跨角度结构；生成时按需加载对应单视图"
-    canonical: true
-  - file: "ip-reference/v2.1/02-head-construction-four-view.png"
-    role: "V2.1 头部四视图人工总览"
-    load_when: "人工核对帽型、五官、刘海、侧发束和后发；生成时使用对应单视图"
-    canonical: true
-  - file: "ip-reference/v2.1/03-article-form-master.png"
-    role: "已废弃的 V2.1 三头身正文实验母版"
-    load_when: "仅做迁移追溯，不用于新正文图"
-    canonical: false
-  - file: "ip-reference/v2.1/04-standard-to-article-scale.png"
-    role: "标准形态到正文形态的比例转换人工对照"
-    load_when: "人工检查比例转换，不作为普通生成参考"
-    canonical: false
-  - file: "ip-reference/v2.1/05-article-form-four-view.png"
-    role: "已废弃的 V2.1 三头身正文四视图"
-    load_when: "仅做迁移追溯，不用于新正文图"
-    canonical: false
-  - file: "ip-reference/v2.1/article-views/01-front.png"
-    role: "已废弃的 V2.1 正文正面参考"
-    load_when: "仅做迁移追溯"
-    canonical: false
-  - file: "ip-reference/v2.1/article-views/03-left-profile.png"
-    role: "已废弃的 V2.1 正文侧面参考"
-    load_when: "仅做迁移追溯"
-    canonical: false
-  - file: "ip-reference/v2.1/article-views/04-back.png"
-    role: "已废弃的 V2.1 正文背面参考"
-    load_when: "仅做迁移追溯"
-    canonical: false
-  - file: "ip-reference/v2.2/00-q-form-master-front.png"
-    role: "V2.2 正文轻 Q 形态正面母版：成年感、内部比例与服装长度"
-    load_when: "常规正文全身构图，或需要锁定轻 Q 比例"
-    canonical: true
-  - file: "ip-reference/v2.2/01-q-form-four-view.png"
-    role: "V2.2 正文轻 Q 形态四视图比例真值"
-    load_when: "人工检查头顶、肩线、腰线、衣摆、裙摆、膝盖和脚底跨角度一致性"
-    canonical: true
-  - file: "ip-reference/v2.2/q-form-views/02-front-three-quarter.png"
-    role: "V2.2 正文轻 Q 形态正面三分之四参考"
-    load_when: "正文主要身份视角的全身构图"
-    canonical: true
-  - file: "ip-reference/v2.2/q-form-views/03-left-profile.png"
-    role: "V2.2 正文轻 Q 形态左向侧面参考"
-    load_when: "正文侧面全身构图"
-    canonical: true
-  - file: "ip-reference/v2.2/q-form-views/04-back.png"
-    role: "V2.2 正文轻 Q 形态背面参考"
-    load_when: "正文背面全身构图"
-    canonical: true
-  - file: "ip-reference/v2.1/head-views/01-front.png"
-    role: "V2.1 正面头部与五官细节参考"
-    load_when: "正面头肩近景或需要核对五官"
-    canonical: true
-  - file: "ip-reference/v2.1/head-views/02-front-three-quarter.png"
-    role: "V2.1 正面三分之四头部结构参考"
-    load_when: "主要身份视角的头肩近景"
-    canonical: true
-  - file: "ip-reference/v2.1/head-views/03-left-profile.png"
-    role: "V2.1 左向侧面头部结构参考"
-    load_when: "侧面头肩近景"
-    canonical: true
-  - file: "ip-reference/v2.1/head-views/04-back.png"
-    role: "V2.1 后脑、帽后扣与后发结构参考"
-    load_when: "背面头肩近景"
-    canonical: true
-  - file: "ip-reference/v2.1/turnaround-views/01-front.png"
-    role: "V2.1 正面结构参考"
-    load_when: "正面、正面近景或对称构图"
-    canonical: true
-  - file: "ip-reference/v2.1/turnaround-views/03-left-profile.png"
-    role: "V2.1 左向纯侧面结构参考"
-    load_when: "纯侧面或接近侧面的构图"
-    canonical: true
-  - file: "ip-reference/v2.1/turnaround-views/04-rear-three-quarter.png"
-    role: "V2.1 后三分之四结构参考"
-    load_when: "回头、后侧或背向构图"
-    canonical: true
-  - file: "ip-reference/v2.1/turnaround-views/05-back.png"
-    role: "V2.1 正背面结构参考"
-    load_when: "背影构图"
-    canonical: true
-  - file: "ip-reference/kevinbee-v2-article.png"
-    role: "V2 旧正文形态过渡参考"
-    load_when: "仅做迁移追溯，不用于决定新图比例"
-    canonical: false
-  - file: "ip-reference/kevinbee-v2-standard.png"
-    role: "V2 旧标准比例过渡参考"
-    load_when: "仅做迁移追溯，不用于决定新图身份"
-    canonical: false
-  - file: "ip-reference/expression-sheet.png"
-    role: "旧 V2 表情范围参考"
-    load_when: "仅做迁移追溯；新图使用 V2.2 表情表"
-    canonical: false
-  - file: "ip-reference/action-sheet.png"
-    role: "旧 V2 动作范围参考"
-    load_when: "仅做迁移追溯；新图使用 V2.2 动作表"
-    canonical: false
-  - file: "ip-reference/v2.2/02-expression-sheet.png"
-    role: "V2.2 成年感克制表情范围：中性、专注、疑惑、思考、微笑、无奈、倔强、满足"
-    load_when: "人工总览情绪范围；普通生成按需使用单张表情，不默认加载整板"
-    canonical: false
-  - file: "ip-reference/v2.2/03-action-sheet.png"
-    role: "V2.2 动态比例范围：走、坐、蹲、伸手、平衡与回头"
-    load_when: "人工总览动作范围；普通生成按需使用单张动作，不默认加载整板"
-    canonical: false
+selection_policy:
+  identity_is_fixed: true
+  metaphor_from_assets: false
+  pool_priority: "none"
+  rule: "先由文章决定隐喻、空间关系和动作，再选择最少且最接近目标角度的身份参考；可选池只纠偏，不提供构图。"
+
+identity_reference:
+  standard_form:
+    - file: "ip-reference/v2.1/00-canonical-master.png"
+      role: "V2.1 唯一标准身份母版：脸、发型、帽子、配色与成年气质"
+      load_when: "标准形态、身份核对，或头肩近景需要锁定成年气质"
+    - file: "ip-reference/v2.1/01-turnaround-five-view.png"
+      role: "V2.1 标准形态五视图人工总览"
+      load_when: "仅用于人工检查跨角度结构；普通生成选择对应单视图"
+    - file: "ip-reference/v2.1/02-head-construction-four-view.png"
+      role: "V2.1 头部四视图人工总览"
+      load_when: "仅用于人工检查帽型、五官、刘海和后发；普通生成选择对应头部单图"
+    - file: "ip-reference/v2.1/head-views/01-front.png"
+      role: "V2.1 正面头部结构"
+      load_when: "正面头肩近景"
+    - file: "ip-reference/v2.1/head-views/02-front-three-quarter.png"
+      role: "V2.1 正面三分之四头部结构"
+      load_when: "主要身份视角的头肩近景"
+    - file: "ip-reference/v2.1/head-views/03-left-profile.png"
+      role: "V2.1 左向侧面头部结构"
+      load_when: "侧面头肩近景"
+    - file: "ip-reference/v2.1/head-views/04-back.png"
+      role: "V2.1 后脑、帽后扣与后发结构"
+      load_when: "背面头肩近景"
+    - file: "ip-reference/v2.1/turnaround-views/01-front.png"
+      role: "V2.1 标准形态正面结构"
+      load_when: "标准形态正面或对称构图"
+    - file: "ip-reference/v2.1/turnaround-views/03-left-profile.png"
+      role: "V2.1 标准形态左向侧面结构"
+      load_when: "标准形态纯侧面"
+    - file: "ip-reference/v2.1/turnaround-views/04-rear-three-quarter.png"
+      role: "V2.1 标准形态后三分之四结构"
+      load_when: "标准形态回头或后侧构图"
+    - file: "ip-reference/v2.1/turnaround-views/05-back.png"
+      role: "V2.1 标准形态背面结构"
+      load_when: "标准形态背影构图"
+
+  article_form:
+    - file: "ip-reference/v2.2/00-q-form-master-front.png"
+      role: "V2.2 正文轻 Q 正面母版：成年感、内部比例与服装长度"
+      load_when: "常规正文全身，或需要锁定正文比例"
+    - file: "ip-reference/v2.2/01-q-form-four-view.png"
+      role: "V2.2 正文轻 Q 四视图人工总览"
+      load_when: "仅用于人工检查头顶、肩线、腰线、衣摆、膝盖和脚底的一致性"
+    - file: "ip-reference/v2.2/q-form-views/02-front-three-quarter.png"
+      role: "V2.2 正文轻 Q 正面三分之四结构"
+      load_when: "正文主要身份视角的全身构图"
+    - file: "ip-reference/v2.2/q-form-views/03-left-profile.png"
+      role: "V2.2 正文轻 Q 左向侧面结构"
+      load_when: "正文侧面全身构图"
+    - file: "ip-reference/v2.2/q-form-views/04-back.png"
+      role: "V2.2 正文轻 Q 背面结构"
+      load_when: "正文背面全身构图"
 
 optional_variation_pools:
-  - location: "ip-reference/v2.2/expression-views/"
-    role: "八种克制表情的单张纠偏样本"
-    select_when: "情绪承担含义且仅靠文字容易换脸时，从语义相近项中选择一张；允许生成新的细微表情"
+  - overview: "ip-reference/v2.2/02-expression-sheet.png"
+    location: "ip-reference/v2.2/expression-views/"
+    role: "八种克制表情的纠偏样本"
+    select_when: "情绪承担含义且仅靠文字容易换脸时，选择一张语义相近的单图"
     copy_pose: false
-  - location: "ip-reference/v2.2/action-views/"
-    role: "六种自然动作的单张比例纠偏样本"
-    select_when: "复杂动作容易拉长或幼化时，从结构相近项中选择一张；允许生成未收录的新动作"
+  - overview: "ip-reference/v2.2/03-action-sheet.png"
+    location: "ip-reference/v2.2/action-views/"
+    role: "六种自然动作的比例纠偏样本"
+    select_when: "复杂动作容易拉长、幼化或失去关节结构时，选择一张结构相近的单图"
     copy_pose: false
 
 article_examples:
   - file: "article-examples/information-overload.png"
-    role: "经历型参与与信息过载示例"
-    use_for: "角色占比、留白、单一强调色"
+    role: "信息过载：角色承受并牵住核心关系"
+    use_for: "角色占比、留白和单一强调色"
     copy_composition: false
   - file: "article-examples/decision-path.png"
-    role: "选择型参与与路径隐喻示例"
-    use_for: "自然参与、轻线稿、无文字表达"
+    role: "决策路径：角色的位置使选择关系成立"
+    use_for: "轻线稿、路径关系和无文字表达"
     copy_composition: false
   - file: "article-examples/v2.2-choice-release.png"
-    role: "V2.2 动态正文前向测试：选择一个方向并放开其他可能"
-    use_for: "轻 Q 角色缩小进 16:9 场景后的比例、成年感与非职业化参与"
+    role: "选择与放下：角色同时牵住和释放不同可能"
+    use_for: "V2.2 正文比例、动态成年感和因果参与"
     copy_composition: false
 
-forward_tests:
-  - file: "forward-tests/v2.2-choice-release-source.png"
-    role: "V2.2 选择与放下场景的原始生成文件"
-    use_for: "裁切追溯，不作为默认生成参考"
-    canonical: false
-
-excluded:
-  location: "../../archive/legacy-v1/"
-  reason: "旧战斗形象与旧隐喻案例，仅供迁移追溯，不进入默认生成上下文"
+excluded_history:
+  - location: "../../archive/legacy-v1/"
+    reason: "旧战斗形象和旧正文案例，只用于迁移追溯"
+  - location: "../../archive/development-v2/"
+    reason: "V2 方向探索、废弃比例与过渡参考，只用于设计追溯"
+  - location: "../../tests/"
+    reason: "前向测试、失败对照和原始生成文件，不进入默认生成上下文"

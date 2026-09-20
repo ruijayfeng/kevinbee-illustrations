@@ -19,19 +19,19 @@ Scene metaphor:
 {为当前文章新发明的具体物理场景}
 
 KevinBee's participation:
-{经历 / 选择 / 同行 / 影响 / 必要时操作；写清姿态与视线}
+{经历 / 选择 / 承受 / 同行 / 影响 / 必要时操作；写清她与核心因果关系发生了什么，而不只写姿态与视线}
 
 Composition:
 Wide horizontal composition, pure white or very light warm-white background, at least 35% quiet negative space. KevinBee occupies about {15%-30%} of the frame. {主要物件与空间关系}.
 
 Style:
-Fresh Japanese editorial illustration, light natural hand-drawn pencil or fine-pen linework, restrained soft watercolor on KevinBee and only the essential object. Clear but not instructional, imaginative but not childish.
+Fresh hand-drawn editorial explanation sketch, light natural pencil or fine-pen linework, restrained soft watercolor on KevinBee and at most one semantic accent. Prioritize the core relation over material rendering. Readable in one second but not instructional, imaginative but not childish.
 
 Text:
-{No text / exact 1-3 short Chinese labels in quotes}
+{No text if the relation is immediately legible / otherwise exact 1-3 short Chinese labels in quotes}
 
 Constraints:
-One image communicates one idea. Preserve the red-star white cap, ice-blue bob, muted-red cardigan and calm independent expression. KevinBee is naturally present in the conceptual world and has no fixed occupation. Do not copy prior examples.
+One image communicates one idea. Preserve the red-star white cap, ice-blue bob, muted-red cardigan and calm independent expression. KevinBee has no fixed occupation, but she must be causally coupled to the metaphor: removing her should noticeably weaken the core action, tension or choice relation, not merely remove mood. Do not copy prior examples.
 
 Avoid:
 Weapons, combat outfit, cape, tactical gear, worker or assistant styling, mascot behavior, battle-poster composition, formal diagram, PPT layout, realistic UI, dense labels, top-left title, complex background, gradients, texture, watermark.
@@ -47,10 +47,10 @@ Weapons, combat outfit, cape, tactical gear, worker or assistant styling, mascot
 Remove only the incorrect text and its underline or callout. Fill the area with the same clean background. Preserve KevinBee's identity, pose, composition, metaphor, linework, colors and aspect ratio. Add nothing new.
 ```
 
-### 让参与方式更自然
+### 修正职业化或旁观化参与
 
 ```text
-Keep the core idea and sparse composition, but change KevinBee's relationship to the scene from a worker operating the structure to a person naturally experiencing, observing, choosing, following or lightly influencing it. Preserve her V2 identity and casual outfit. Do not add tools, uniforms or extra labels.
+Keep the core idea and sparse composition, but change KevinBee's relationship to the scene so she is causally involved without becoming a fixed worker. She may experience, choose, bear, follow, release, balance or lightly influence the key relation. Do not leave her merely watching from the side: removing her must noticeably weaken the core action, tension or choice. Preserve her V2 identity and casual outfit. Do not add occupational tools or uniforms.
 ```
 
 ## 输出尺寸

@@ -215,7 +215,7 @@
 
 ## 13. 第一轮探索结果
 
-候选图保存在 `assets/v2-explorations/`，目前仅用于方向比较。
+候选图保存在 `archive/development-v2/explorations/`，目前仅用于方向比较，不进入 Skill 运行时。
 
 ### A：红色短款连帽外套
 
@@ -241,14 +241,14 @@
 
 第二轮 B2 已收敛为：白帽红星、冰蓝短发、象牙白圆领内搭、胯部长度的柔和暗红针织开衫、藏青 A 字短裙、深灰短袜和浅色休闲鞋。
 
-- `assets/v2-explorations/04-b2-standard-form.png`：封面与 IP 展示候选基准。
-- `assets/v2-explorations/05-b2-article-chibi.png`：正文配图三头身候选基准。
+- `archive/development-v2/explorations/04-b2-standard-form.png`：封面与 IP 展示候选基准。
+- `archive/development-v2/explorations/05-b2-article-chibi.png`：正文配图三头身候选基准。
 
 B2 仍属于候选资产。在完成表情、动作和至少三种正文场景验证之前，不进入正式 Skill 的默认上下文。
 
 ## 14. B2 验证结果
 
-验证资产保存在 `assets/v2-validation/`。图像模型返回的正文原图为 3:2，原始文件保存在 `assets/v2-validation/raw/`；另保留 1536×864 的 16:9 居中裁切版本。
+早期验证资产保存在 `archive/development-v2/validation-v2.1/`。图像模型返回的正文原图为 3:2，原始文件保存在其 `raw/` 子目录；被选为正式示例的 16:9 版本只保存在 Skill 的 `assets/article-examples/`，不在归档区重复保存。这些文件只用于设计追溯。
 
 ### 表情与动作
 

@@ -112,12 +112,6 @@ cp -R ./kevinbee-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 Use $kevinbee-illustrations 为这篇中文文章规划并生成几张凯冰 V2 正文配图。
 ```
 
-## 与文章生产套件的关系
-
-本仓库的 [`kevinbee-illustrations/`](kevinbee-illustrations/SKILL.md) 是凯冰配图 Skill 的唯一维护源。文章选题、写作、配图和排版需要串联时，使用 [凯冰内容生产套件](https://github.com/ruijayfeng/kevinbee-article-suite)；套件通过 Git 子模块引用本仓库，并不维护另一份配图规则或角色资产。
-
-两边按已验证的提交同步：本仓库更新后，套件核对兼容性并推进子模块锁定点，而不是复制文件或自动追踪分支最新提交。只有跨 Skill 的阶段路由、材料交接和平台交付属于套件自身规则，见[套件 Skill 的维护说明](https://github.com/ruijayfeng/kevinbee-article-suite/blob/main/.agents/skills/kevinbee-article-suite/README.md)。
-
 ## 使用方式
 
 ### 只规划，不生图

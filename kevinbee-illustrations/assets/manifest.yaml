@@ -44,7 +44,7 @@ identity_reference:
 
   article_form:
     - file: "ip-reference/v2.2/00-q-form-master-front.png"
-      role: "V2.2 正文轻 Q 正面母版：成年感、内部比例与服装长度"
+      role: "V2.2 正文轻 Q 正面母版：成年感、协调肩线、内部比例与服装长度"
       load_when: "常规正文全身，或需要锁定正文比例"
     - file: "ip-reference/v2.2/01-q-form-four-view.png"
       role: "V2.2 正文轻 Q 四视图人工总览"
@@ -67,7 +67,7 @@ optional_variation_pools:
     copy_pose: false
   - overview: "ip-reference/v2.2/03-action-sheet.png"
     location: "ip-reference/v2.2/action-views/"
-    role: "六种自然动作的比例纠偏样本"
+    role: "六种自然动作的关节和姿态纠偏样本；肩线与袖型以正文母版为准"
     select_when: "复杂动作容易拉长、幼化或失去关节结构时，选择一张结构相近的单图"
     copy_pose: false
 

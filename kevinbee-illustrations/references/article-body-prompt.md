@@ -9,7 +9,7 @@ Use case: illustration-story
 Asset type: standalone 16:9 Chinese article-body illustration
 
 Identity reference:
-Image 1 is the closest KevinBee V2.2 light-chibi article-form reference. Preserve its adult identity, relatively enlarged head, clear shoulder-waist-hip structure, moderately shortened limbs, short high-hip cardigan, upper-thigh skirt, hair, hat, palette and angle structure. Keep the character's apparent standing height; do not create chibi form by shrinking the whole person or by turning the face and limbs childlike. Dynamic poses may lengthen only enough to stay natural and must remain visibly more compact than the standard character form.
+Image 1 is the closest KevinBee V2.2 light-chibi article-form reference. Preserve its adult identity, relatively enlarged head, softly sloping and balanced shoulder-waist-hip structure, moderately shortened limbs, short high-hip cardigan, upper-thigh skirt, hair, hat, palette and angle structure. Keep the cardigan casually soft while avoiding an exaggerated drop shoulder or bulky squared upper-sleeve silhouette. Keep the character's apparent standing height; do not create chibi form by shrinking the whole person or by turning the face and limbs childlike. Dynamic poses may lengthen only enough to stay natural and must remain visibly more compact than the standard character form.
 {从 ip-core.md 的“提示词身份片段”取用必要内容；参考图已经稳定时可缩短}
 
 Core idea:

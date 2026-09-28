@@ -1,6 +1,6 @@
 # 正文配图提示词组装
 
-每张图单独生成。先写清 `Core idea`、`Scene metaphor` 和角色参与方式，再选择视觉参考。常规正文全身只需 V2.2 正文母版；角度、动作或情绪容易漂移时，才从单图池补一张最相关参考。不要让参考图决定隐喻，也不要同时加载标准身份母版、标准五视图或旧 V2.1 三头身图。
+每张图单独生成。先写清 `Core idea`、`Scene metaphor` 和角色参与方式，再选择视觉参考。常规正文全身只需 V2.3 强 Q 正面母版或最接近角度的单图；身份、动作或情绪容易漂移时，才补充一张直接相关参考。不要让参考图决定隐喻，也不要同时加载标准形态全身图、退役 V2.2 轻 Q 图或旧 V2.1 三头身图。
 
 不要复制一个永远不变的巨型提示词。按当前文章填充以下结构，删掉无关项。
 
@@ -9,7 +9,7 @@ Use case: illustration-story
 Asset type: standalone 16:9 Chinese article-body illustration
 
 Identity reference:
-Image 1 is the closest KevinBee V2.2 light-chibi article-form reference. Preserve its adult identity, relatively enlarged head, softly sloping and balanced shoulder-waist-hip structure, moderately shortened limbs, short high-hip cardigan, upper-thigh skirt, hair, hat, palette and angle structure. Keep the cardigan casually soft while avoiding an exaggerated drop shoulder or bulky squared upper-sleeve silhouette. Keep the character's apparent standing height; do not create chibi form by shrinking the whole person or by turning the face and limbs childlike. Dynamic poses may lengthen only enough to stay natural and must remain visibly more compact than the standard character form.
+Image 1 is the closest KevinBee V2.3 strong-chibi article-form reference. Preserve the same oversized red-star white cap, ice-blue bob, red-orange eyes, calm independent expression, compact torso, short movable limbs, small hands, muted-red short cardigan, navy skirt and light sneakers. Childlike visual proportions, rounded knees and substantial small shoes are allowed in this Q form. Keep shoulders gentle and narrower than the head-and-hair silhouette. Match the reference's internal Q design instead of shrinking a standard-body character on the canvas; adapt pose and perspective to the new metaphor without stretching the legs back to standard proportions.
 {从 ip-core.md 的“提示词身份片段”取用必要内容；参考图已经稳定时可缩短}
 
 Core idea:

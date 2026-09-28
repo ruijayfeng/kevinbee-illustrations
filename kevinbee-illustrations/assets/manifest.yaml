@@ -1,4 +1,4 @@
-version: 2.2
+version: 2.3
 
 selection_policy:
   identity_is_fixed: true
@@ -43,52 +43,23 @@ identity_reference:
       load_when: "标准形态背影构图"
 
   article_form:
-    - file: "ip-reference/v2.2/00-q-form-master-front.png"
-      role: "V2.2 正文轻 Q 正面母版：成年感、协调肩线、内部比例与服装长度"
-      load_when: "常规正文全身，或需要锁定正文比例"
-    - file: "ip-reference/v2.2/01-q-form-four-view.png"
-      role: "V2.2 正文轻 Q 四视图人工总览"
-      load_when: "仅用于人工检查头顶、肩线、腰线、衣摆、膝盖和脚底的一致性"
-    - file: "ip-reference/v2.2/q-form-views/02-front-three-quarter.png"
-      role: "V2.2 正文轻 Q 正面三分之四结构"
+    - file: "ip-reference/v2.3/00-strong-q-master-front.png"
+      role: "V2.3 正文强 Q 正面母版：大头帽、短躯短腿、服装与身份轮廓"
+      load_when: "常规正文全身，或需要锁定强 Q 比例"
+    - file: "ip-reference/v2.3/q-form-views/02-front-three-quarter.png"
+      role: "V2.3 正文强 Q 正面三分之四结构"
       load_when: "正文主要身份视角的全身构图"
-    - file: "ip-reference/v2.2/q-form-views/03-left-profile.png"
-      role: "V2.2 正文轻 Q 左向侧面结构"
+    - file: "ip-reference/v2.3/q-form-views/03-left-profile.png"
+      role: "V2.3 正文强 Q 左向侧面结构"
       load_when: "正文侧面全身构图"
-    - file: "ip-reference/v2.2/q-form-views/04-back.png"
-      role: "V2.2 正文轻 Q 背面结构"
+    - file: "ip-reference/v2.3/q-form-views/04-back.png"
+      role: "V2.3 正文强 Q 背面结构"
       load_when: "正文背面全身构图"
-
-optional_variation_pools:
-  - overview: "ip-reference/v2.2/02-expression-sheet.png"
-    location: "ip-reference/v2.2/expression-views/"
-    role: "八种克制表情的纠偏样本"
-    select_when: "情绪承担含义且仅靠文字容易换脸时，选择一张语义相近的单图"
-    copy_pose: false
-  - overview: "ip-reference/v2.2/03-action-sheet.png"
-    location: "ip-reference/v2.2/action-views/"
-    role: "六种自然动作的关节和姿态纠偏样本；肩线与袖型以正文母版为准"
-    select_when: "复杂动作容易拉长、幼化或失去关节结构时，选择一张结构相近的单图"
-    copy_pose: false
-
-article_examples:
-  - file: "article-examples/information-overload.png"
-    role: "信息过载：角色承受并牵住核心关系"
-    use_for: "角色占比、留白和单一强调色"
-    copy_composition: false
-  - file: "article-examples/decision-path.png"
-    role: "决策路径：角色的位置使选择关系成立"
-    use_for: "轻线稿、路径关系和无文字表达"
-    copy_composition: false
-  - file: "article-examples/v2.2-choice-release.png"
-    role: "选择与放下：角色同时牵住和释放不同可能"
-    use_for: "V2.2 正文比例、动态成年感和因果参与"
-    copy_composition: false
 
 excluded_history:
   - location: "../../archive/legacy-v1/"
     reason: "旧战斗形象和旧正文案例，只用于迁移追溯"
   - location: "../../archive/development-v2/"
-    reason: "V2 方向探索、废弃比例与过渡参考，只用于设计追溯"
+    reason: "V2 方向探索、退役的 V2.2 轻 Q 比例与文章示例，只用于设计追溯"
   - location: "../../tests/"
     reason: "前向测试、失败对照和原始生成文件，不进入默认生成上下文"

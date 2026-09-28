@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import hashlib
 import re
-import struct
 import sys
 from pathlib import Path
 
@@ -16,7 +15,7 @@ REQUIRED_FILES = (
     "SKILL.md",
     "agents/openai.yaml",
     "references/ip-core.md",
-    "references/character-model-v2.2.md",
+    "references/character-model-v2.3.md",
     "references/article-body-style.md",
     "references/article-body-prompt.md",
     "references/composition-patterns.md",
@@ -30,6 +29,8 @@ STALE_REFERENCES = (
     "references/style-dna.md",
     "references/prompt-template.md",
     "assets/examples/",
+    "ip-reference/v2.2/",
+    "character-model-v2.2.md",
 )
 STALE_COPY = (
     "猩红色连帽斗篷",
@@ -37,14 +38,6 @@ STALE_COPY = (
     "剑是动作工具",
     "像一位安静的现场操作员",
 )
-
-
-def png_dimensions(path: Path) -> tuple[int, int]:
-    with path.open("rb") as stream:
-        header = stream.read(24)
-    if len(header) != 24 or header[:8] != b"\x89PNG\r\n\x1a\n":
-        raise ValueError("not a PNG")
-    return struct.unpack(">II", header[16:24])
 
 
 def active_text_files() -> list[Path]:
@@ -72,7 +65,7 @@ def main() -> int:
             errors.append("SKILL.md must have a non-empty description")
         for reference in (
             "references/ip-core.md",
-            "references/character-model-v2.2.md",
+            "references/character-model-v2.3.md",
             "references/article-body-style.md",
             "references/article-body-prompt.md",
             "references/composition-patterns.md",
@@ -135,24 +128,15 @@ def main() -> int:
             if relative not in declared_files and not covered_by_pool:
                 errors.append(f"asset is not routed by manifest: {relative}")
 
-    article_examples = SKILL_ROOT / "assets/article-examples"
-    if article_examples.is_dir():
-        for image_path in sorted(article_examples.glob("*.png")):
-            try:
-                width, height = png_dimensions(image_path)
-            except ValueError as exc:
-                errors.append(f"invalid image {image_path.name}: {exc}")
-                continue
-            if width * 9 != height * 16:
-                errors.append(
-                    f"article example is not 16:9: {image_path.name} ({width}x{height})"
-                )
-
     hashes: dict[str, Path] = {}
     assets_root = SKILL_ROOT / "assets"
     if assets_root.is_dir():
         for image_path in sorted(assets_root.rglob("*.png")):
-            digest = hashlib.sha256(image_path.read_bytes()).hexdigest()
+            data = image_path.read_bytes()
+            if not data.startswith(b"\x89PNG\r\n\x1a\n"):
+                errors.append(f"invalid PNG: {image_path.relative_to(SKILL_ROOT)}")
+                continue
+            digest = hashlib.sha256(data).hexdigest()
             if digest in hashes:
                 first = hashes[digest].relative_to(SKILL_ROOT)
                 second = image_path.relative_to(SKILL_ROOT)

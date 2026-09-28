@@ -4,7 +4,7 @@
 
 ## 核心身份
 
-凯冰是一位清新、安静、有主见的日系休闲少女。她略带距离感和倔强，但不冷酷；可爱来自自然比例、动作和反差，不来自撒娇、幼态或甜腻装饰。
+凯冰是一位清新、安静、有主见的日系休闲少女。她略带距离感和倔强，但不冷酷；Q 版可以有显幼态的视觉比例，性格不因此变成撒娇或甜腻的儿童角色。
 
 她没有固定职业。进入文章配图时，她可以经历、观察、选择、跟随、靠近或影响抽象世界，但不是内容助理、维修员、现场操作员或服务者。
 
@@ -22,19 +22,18 @@
 
 ### 正文形态
 
-- 使用成年感的轻 Q 比例，静态约 4.0–4.5 头身；动态可自然延展到约 4.0–4.7 头身，但不能回到标准形态的修长比例。
-- Q 感来自相对放大的头部、适度缩短的躯干和四肢，以及同步缩短的服装；不得把正常角色整体压矮或做成幼儿体型。
-- 保留清楚的肩、腰、胯、膝盖、手掌与鞋型；肩线自然微斜，肩与腰胯的关系轻巧协调，眼睛和脸型不继续幼化。
-- 开衫下摆在高胯附近，裙摆在大腿中上段，避免标准长衣服套在缩短身体上。
-- 常规视角使用 `assets/ip-reference/v2.2/00-q-form-master-front.png`；特殊角度使用 `assets/ip-reference/v2.2/q-form-views/` 中的对应单图。标准比例母版用于人工核对身份，不与正文全身角度图默认混载。
+- 使用 V2.3 正式 Q 版形象：大头帽、紧凑躯干、短腿、小手和可自然活动的关节。显幼态的视觉比例、圆厚膝盖或鞋可以成立，不再沿用旧轻 Q 的成年骨架限制。
+- Q 感来自内部造型重构及同步简化的服装，不是把标准形象整体缩小。肩线窄而柔和，开衫保留轻松的针织体量，不撑成宽方形。
+- 开衫下摆在高胯附近，裙摆在大腿中上段；帽、发、脸、红色衣块和动作关系在不同角度保持一致。
+- 常规视角使用 `assets/ip-reference/v2.3/00-strong-q-master-front.png`；特殊角度使用 `assets/ip-reference/v2.3/q-form-views/` 中的对应单图。V2.1 标准比例母版用于身份核对，不与正文 Q 版全身图默认混载。
 
 ### 标准形态
 
 - 约 5–5.5 头身。
 - 可增加发丝、服装结构和表情细节，但保持轻盈、休闲。
-- 使用 `assets/ip-reference/v2.1/00-canonical-master.png` 作为唯一身份母版；角度结构按 `references/character-model-v2.2.md` 选择对应视图。
+- 使用 `assets/ip-reference/v2.1/00-canonical-master.png` 作为标准形象身份母版；角度结构按 `references/character-model-v2.3.md` 选择对应视图。
 
-两种形态是同一角色，只改变比例、服装长度和细节密度。正文轻 Q 比例以成年感、头部相对放大、身体紧凑和动作自然为判断，不为追求精确头身数制造幼态或肢体变形。
+两种形态是同一角色，正文 Q 版允许明显重构头身与四肢。年龄感不由头身数字判定；优先保住凯冰的识别特征、安静独立的气质与动作可读性。
 
 ## 默认服装
 
@@ -64,7 +63,7 @@
 - 刀、剑、剑鞘、枪械或其他武器。
 - 战斗服、战术腰带、颈圈、重甲、长斗篷、破损披风和厚重军靴。
 - 军事、女仆、职业制服、服务人员或工具人造型。
-- 偶像、甜妹、儿童吉祥物、表情包或粉色公主风。
+- 偶像、甜妹、无人物行动能力的圆团吉祥物、表情包或粉色公主风。
 - 英雄落地、迎战、冲锋、警戒等战斗构图。
 - “赤星”或 `CHIXING`；角色名始终是“凯冰”或 `KevinBee`。
 
@@ -75,5 +74,5 @@
 需要文字描述身份时，从本段取用，不在其他文件维护第二份版本：
 
 ```text
-KevinBee, an adult Japanese-casual illustrated woman in a compact editorial form with a slightly enlarged head and shortened limbs: a lived-in white baseball cap with one clear centered red five-point star, airy chin-length ice-blue bob hair, restrained red-orange eyes, a calm independent expression, a muted dark-red hip-length knit cardigan, ivory crew-neck top, navy A-line skirt, charcoal ankle socks, and light casual sneakers. She is a complete character with no fixed occupation—not a worker, assistant, fighter, mascot, idol, or child.
+KevinBee, the same calm independent Japanese-casual illustrated character in a distinctly redesigned strong-chibi editorial form: an oversized lived-in white baseball cap with one clear centered red five-point star, airy chin-length ice-blue bob hair, restrained red-orange eyes, a compact torso, short rounded movable limbs and small hands, a muted dark-red short knit cardigan, ivory crew-neck top, navy A-line skirt, charcoal ankle socks, and light casual sneakers. Her visual proportions may be childlike in chibi style; she remains a complete character with no fixed occupation or mascot behavior.
 ```

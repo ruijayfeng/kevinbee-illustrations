@@ -41,37 +41,25 @@
 
 ![凯冰 V2.1 头部结构](kevinbee-illustrations/assets/ip-reference/v2.1/02-head-construction-four-view.png)
 
-### V2.2 正文轻 Q 形态母版
+### V2.3 正文 Q 版母版
 
-![凯冰 V2.2 正文轻 Q 形态](kevinbee-illustrations/assets/ip-reference/v2.2/00-q-form-master-front.png)
+![凯冰 V2.3 正文 Q 版正面](kevinbee-illustrations/assets/ip-reference/v2.3/00-strong-q-master-front.png)
 
-### V2.2 正文轻 Q 形态四视图
+### V2.3 独立角度参考
 
-![凯冰 V2.2 正文轻 Q 四视图](kevinbee-illustrations/assets/ip-reference/v2.2/01-q-form-four-view.png)
+![凯冰 V2.3 正面三分之四](kevinbee-illustrations/assets/ip-reference/v2.3/q-form-views/02-front-three-quarter.png)
 
-V2.2 不再把标准角色整体压矮。它在保持成年脸、总高度感和清楚骨架的前提下，相对放大头部、适度缩短躯干与四肢，并同步缩短开衫和裙长。四个角度来自同一张统一画布，服装节点与脚底线保持一致。
+![凯冰 V2.3 左向侧面](kevinbee-illustrations/assets/ip-reference/v2.3/q-form-views/03-left-profile.png)
 
-### V2.2 表情与动作范围
+![凯冰 V2.3 背面](kevinbee-illustrations/assets/ip-reference/v2.3/q-form-views/04-back.png)
 
-![凯冰 V2.2 表情表](kevinbee-illustrations/assets/ip-reference/v2.2/02-expression-sheet.png)
+V2.3 是重新设计的大头帽、短躯短腿 Q 版，不是把标准人物在画布上缩小。圆厚膝鞋与显幼态的视觉比例可以成立；固定的是白帽红星、蓝发、红色开衫、安静有主见的气质和跨角度造型。旧 V2.2 轻 Q 及其表情、动作、正文示例保存在 `archive/development-v2/retired-v2.2-runtime/`，不再参与默认生图。
 
-![凯冰 V2.2 动作表](kevinbee-illustrations/assets/ip-reference/v2.2/03-action-sheet.png)
+## 强 Q 正文场景探索
 
-## 正文配图效果
+![连续画线隐喻探索](archive/development-v2/explorations/q-form-study-2026-09-28/17-continuity-pencil-scene.png)
 
-### 信息过载：从噪声中牵住一根清晰线索
-
-![信息过载](kevinbee-illustrations/assets/article-examples/information-overload.png)
-
-### 决策路径：在分岔处发现一个值得靠近的方向
-
-![决策路径](kevinbee-illustrations/assets/article-examples/decision-path.png)
-
-### 选择与放下：牵住一个方向，同时放开其他可能
-
-![选择与放下](kevinbee-illustrations/assets/article-examples/v2.2-choice-release.png)
-
-这些图片用于校准角色身份、线条、留白和参与方式，不是可复用的构图模板。每篇文章都应重新发明隐喻。
+这张探索图只验证强 Q 形象能进入文章隐喻，不是默认的铅笔或构图模板。每篇文章仍从正文重新发明场景；正式正文图需按当前文章单独生成与验收。
 
 ## 正文配图视觉原则
 
@@ -92,10 +80,10 @@ V2.2 不再把标准角色整体压矮。它在保持成年脸、总高度感和
 
 ## 固定身份，开放表达
 
-- 固定凯冰的脸、帽星、发型、服装结构、配色和轻 Q 身体逻辑。
+- 固定凯冰的脸、帽星、发型、服装结构、配色和强 Q 身体逻辑。
 - 不固定每篇文章的隐喻物件、动作、观察角度、角色站位或参与方式。
 - 先从文章发明隐喻，再按需加载最少的角色参考；不能从已有姿势反向套用文章。
-- 表情与动作单图是可选纠偏样本，不是模板清单。同一语义有多个合格方案时，应保留变化并避免连续复用。
+- 正式角度图只校准当前画面的人物造型，不是姿势模板。同一语义有多个合格方案时，应保留变化并避免连续复用。
 
 ## 安装
 
@@ -162,7 +150,7 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成一张封面主视觉�
 
 ## Skill 的工作方式
 
-正文模式：找出文章的核心判断和转折，只在需要解释关系的位置发明隐喻；让凯冰进入核心因果关系，检查身份、参与方式与画幅，保存原图及最终正文版本。标准与近景使用 V2.1 身份层，正文全身使用 V2.2 轻 Q 层。
+正文模式：找出文章的核心判断和转折，只在需要解释关系的位置发明隐喻；让凯冰进入核心因果关系，检查身份、参与方式与画幅，保存原图及最终正文版本。标准形象使用 V2.1 身份层，正文全身使用 V2.3 强 Q 层。
 
 封面模式：依据定稿标题和文章核心承诺，聚焦一个主对象与张力；让凯冰参与，保留标题和裁切安全区，检查原尺寸与缩略图。封面不直接放大正文隐喻图，也不伪装成角色海报。
 
@@ -178,7 +166,7 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成一张封面主视觉�
 │   └── upstream-analysis.md
 ├── archive/
 │   ├── legacy-v1/                # 旧战斗形象与旧案例
-│   └── development-v2/           # V2 探索、废弃比例与过渡资产
+│   └── development-v2/           # V2 探索、退役的轻 Q 与过渡资产
 ├── tests/
 │   └── article-body/             # 前向测试、失败对照、原图与最终裁切
 └── kevinbee-illustrations/
@@ -187,11 +175,10 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成一张封面主视觉�
     │   └── openai.yaml
     ├── assets/
     │   ├── manifest.yaml
-    │   ├── ip-reference/
-    │   └── article-examples/
+    │   └── ip-reference/          # V2.1 标准身份 + V2.3 正文 Q 版
     ├── references/
     │   ├── ip-core.md
-    │   ├── character-model-v2.2.md
+    │   ├── character-model-v2.3.md
     │   ├── article-body-style.md
     │   ├── article-body-prompt.md
     │   ├── cover-style.md
@@ -208,7 +195,7 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成一张封面主视觉�
 ## 设计上的单一真值
 
 - 凯冰是谁：只由 `references/ip-core.md` 定义
-- 比例、角度与参考选择：由 `references/character-model-v2.2.md` 定义
+- 比例、角度与参考选择：由 `references/character-model-v2.3.md` 定义
 - 正文图长什么样：由 `references/article-body-style.md` 定义
 - 如何构造提示词：由 `references/article-body-prompt.md` 定义
 - 如何发明隐喻：由 `references/composition-patterns.md` 定义

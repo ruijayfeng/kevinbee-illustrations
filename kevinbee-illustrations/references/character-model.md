@@ -25,7 +25,7 @@
 | 正文 Q 版 | 左侧 | `assets/identity/article-q/views/left-profile.png` |
 | 正文 Q 版 | 背面 | `assets/identity/article-q/views/back.png` |
 
-标准形态近景可从 `assets/identity/standard/head/` 选择对应头部单图。头部图只校准脸、发和帽，不决定肩袖或身体比例。
+标准形态近景仍以母版或相应全身视图确定肩袖与身体比例；需要更清楚地校准脸、发和帽时，才从 `assets/identity/standard/head/` 补充对应头部单图。头部图下缘含旧肩部局部且没有完整上臂，不能单独作为头肩近景的人物参考，也不决定肩袖轮廓。
 
 帽子正面只有一枚红星；侧面仅显示透视可见的部分，背面显示帽扣。动作会改变透视和四肢压缩程度，检查跨角度识别与动作重心，不追求固定头身数字。
 

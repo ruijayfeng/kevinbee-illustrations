@@ -30,6 +30,7 @@ description: 为中文文章规划、生成或编辑凯冰正文隐喻配图与�
 | 文章图片角色 | `references/article-image-roles.md` | 文章已有截图、结果图或对照图时 |
 | 正文视觉语言 | `references/article-body-style.md` | 生成正文图 |
 | 封面内容构思 | `references/cover-concept-method.md` | 从文章提出封面方向或生成封面前 |
+| 封面案例复盘 | `references/cover-examples.md` | 封面构思完成后，需要比较人物、对象和标题的信息层级时 |
 | 封面视觉语言 | `references/cover-style.md` | 用户要封面主视觉时 |
 | 提示词组装 | `references/article-body-prompt.md` | 调用图像工具前 |
 | 封面提示词组装 | `references/cover-prompt.md` | 调用图像工具生成封面前 |
@@ -81,7 +82,7 @@ description: 为中文文章规划、生成或编辑凯冰正文隐喻配图与�
 
 ### 封面模式
 
-用户明确要求封面时，读取 `references/cover-concept-method.md` 与 `references/cover-style.md`；调用图像工具前再读 `references/cover-prompt.md`。不套用正文图的画幅、留白比例或隐喻图验收。以文章主题、一个核心张力和目标平台为输入；文章尚未定稿时可以做候选方向，但不把未确认的文字烙进图中。
+用户明确要求封面时，读取 `references/cover-concept-method.md` 与 `references/cover-style.md`；调用图像工具前再读 `references/cover-prompt.md`。不套用正文图的画幅、留白比例或隐喻图验收。以文章主题、一个核心张力和目标平台为输入；文章尚未定稿时可以做候选方向，但不把未确认的文字烙进图中。已有封面成图保存在 `assets/cover/`，构思完成后需要比较信息层级时按需读取 `references/cover-examples.md`；成图不作为默认图像输入或人物比例参考。
 
 以标准形态母版校准封面人物，按需要补一张对应头部或角度参考；保持自然肩颈、成年身体比例与可读的手势。当前标准母版的落肩袖仍待比例验收，不把母版宽袖当作目标肩宽。先共同设计主题道具、空间关系与凯冰的表情、动作、景别和占比，再确定文字区域；不预设凯冰在右侧或标题在顶部。封面只保留一个可辨认的主对象与变化。人物应成为能辨认神情与动作的主要视觉层之一，而不是缩在边缘的装饰。区分文章长标题和封面上的短主题词：用户给了封面文案时按原文使用；若只给文章标题，可提炼适合画面的短主题词，生成前确认，除非用户已明确授权直接选择；用户明确要无字版时保留可排字区域。先确定目标平台或用户指定的最终画幅，再组织构图；未给尺寸时交付横版母图并明确哪些平台裁切尚未验证。
 

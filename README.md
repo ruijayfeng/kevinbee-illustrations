@@ -57,6 +57,16 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成封面。
 
 标准形态的现有母版可校准身份，但其宽松落肩袖仍待比例验收；新封面需单独检查肩峰、袖量和最终剪影。母版内容尚未重画。
 
+## 专门的封面功能与案例
+
+封面模式会从文章提炼主对象与一处核心张力，安排凯冰的神情、动作、景别、占比和短标题，再检查实际画幅、目标裁切和缩略图。完整流程见 [SKILL.md](kevinbee-illustrations/SKILL.md)；案例的使用边界见 [封面案例复盘](kevinbee-illustrations/references/cover-examples.md)。
+
+| 既有文章封面 | 内容构思研究 |
+|---|---|
+| [微缩房间](kevinbee-illustrations/assets/cover/editorial-examples/seed-miniature-room.png) · [纳米工作](kevinbee-illustrations/assets/cover/editorial-examples/nano-work.png) · [远程协助](kevinbee-illustrations/assets/cover/editorial-examples/remote-assistance.png) | [多结果分岔](kevinbee-illustrations/assets/cover/concept-studies/qwen-branching.png) · [进入产品世界](kevinbee-illustrations/assets/cover/concept-studies/hyper3d-forward.png) · [动作冲击](kevinbee-illustrations/assets/cover/concept-studies/fighting-skill-impact.png) · [一次示范带出后续](kevinbee-illustrations/assets/cover/concept-studies/teach-once-causal.png) |
+
+这些成图用于复盘封面设计，生成新图时不默认加载。四张内容构思研究图的肩袖比例尚未合格，不作为人物比例参考；每篇文章仍重新决定隐喻和构图。
+
 ## 当前目录
 
 ```text
@@ -65,9 +75,10 @@ kevinbee-illustrations/
 ├── agents/openai.yaml
 ├── assets/
 │   ├── manifest.yaml
-│   └── identity/
-│       ├── standard/       # 封面标准形态与角度、头部参考
-│       └── article-q/      # 正文 Q 版与角度参考
+│   ├── identity/
+│   │   ├── standard/       # 封面标准形态与角度、头部参考
+│   │   └── article-q/      # 正文 Q 版与角度参考
+│   └── cover/              # 封面设计案例，按需人工复盘
 ├── references/            # 身份、构思、风格、提示词和验收规则
 └── scripts/validate.py
 ```

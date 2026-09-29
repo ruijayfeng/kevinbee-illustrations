@@ -87,6 +87,8 @@ V2.3 是重新设计的大头帽、短躯短腿 Q 版，不是把标准人物在
 
 这张图用于展示标准人物、神情、动作与标题共同构图的质量方向，不是人物右置、微缩房间或蓝色大字的固定模板。另见 [标准版封面基线与缩略图检查](tests/cover/standard-v2.1-baseline/README.md)。
 
+四种主题的标准版封面研究见 [阿真封面设计拆解与凯冰示例](tests/cover/azhen-design-study-2026-09-29/README.md)：生成结果分布在“多结果分岔 / 进入产品世界 / 动作冲击 / 一次示范带出后续”四种内容关系。它们用于理解文章如何变成画面，不是默认加载的版式模板。Skill 中的 [封面构思方法](kevinbee-illustrations/references/cover-concept-method.md) 记录了可迁移的判断步骤。
+
 ## 固定身份，开放表达
 
 - 固定凯冰的脸、帽星、发型、服装结构、配色和强 Q 身体逻辑。
@@ -179,19 +181,22 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成一张封面主视觉�
 │   ├── legacy-v1/                # 旧战斗形象与旧案例
 │   └── development-v2/           # V2 探索、退役的轻 Q 与过渡资产
 ├── tests/
-│   └── article-body/             # 前向测试、失败对照、原图与最终裁切
+│   ├── article-body/             # 正文前向测试、失败对照、原图与最终裁切
+│   └── cover/                    # 封面基线与设计研究
 └── kevinbee-illustrations/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
     ├── assets/
     │   ├── manifest.yaml
-    │   └── ip-reference/          # V2.1 标准身份 + V2.3 正文 Q 版
+    │   ├── ip-reference/          # V2.1 标准身份 + V2.3 正文 Q 版
+    │   └── cover-reference/       # 可选的封面设计研究图，非默认生图输入
     ├── references/
     │   ├── ip-core.md
     │   ├── character-model-v2.3.md
     │   ├── article-body-style.md
     │   ├── article-body-prompt.md
+    │   ├── cover-concept-method.md
     │   ├── cover-style.md
     │   ├── cover-prompt.md
     │   ├── cover-qa.md
@@ -211,10 +216,10 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成一张封面主视觉�
 - 如何构造提示词：由 `references/article-body-prompt.md` 定义
 - 如何发明隐喻：由 `references/composition-patterns.md` 定义
 - 如何验收：由 `references/qa-checklist.md` 定义
-- 封面视觉、提示词与验收：分别由 `references/cover-style.md`、`references/cover-prompt.md`、`references/cover-qa.md` 定义
+- 封面内容构思、视觉、提示词与验收：分别由 `references/cover-concept-method.md`、`references/cover-style.md`、`references/cover-prompt.md`、`references/cover-qa.md` 定义
 - 哪张图该在何时加载：由 `assets/manifest.yaml` 定义
 
-正文依赖顺序是：角色身份 → 角色结构 → 隐喻构图 → 正文风格 → 提示词 → QA。封面另按封面视觉、提示词与验收规则执行。后层不得重写前层，测试和历史资产也不得进入运行时清单。
+正文依赖顺序是：角色身份 → 角色结构 → 隐喻构图 → 正文风格 → 提示词 → QA。封面顺序是：文章理解 → 封面构思 → V2.1 人物校准 → 视觉执行 → 提示词 → QA。后层不得重写前层；研究图仅是可选设计参考，不进入默认生图输入，测试和历史资产也不得进入运行时清单。
 
 ## 上游与署名
 

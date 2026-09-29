@@ -6,6 +6,11 @@ selection_policy:
   pool_priority: "none"
   rule: "先由文章决定隐喻、空间关系和动作，再选择最少且最接近目标角度的身份参考；可选池只纠偏，不提供构图。"
 
+cover_design_study:
+  location: "cover-reference/azhen-design-study"
+  role: "四种封面因果构思的人物、动作与标题关系研究；只供人工复盘，不是身份参考或生成模板"
+  load_when: "文章封面构思已完成，需要比较视觉层级或复盘设计时；默认生图不加载"
+
 identity_reference:
   standard_form:
     - file: "ip-reference/v2.1/00-canonical-master.png"

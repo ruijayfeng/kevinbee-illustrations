@@ -1,6 +1,6 @@
 # 正文配图提示词组装
 
-每张图单独生成。先写清 `Core idea`、`Scene metaphor` 和角色参与方式，再选择视觉参考。常规正文全身只需 V2.3 强 Q 正面母版或最接近角度的单图；身份、动作或情绪容易漂移时，才补充一张直接相关参考。不要让参考图决定隐喻，也不要同时加载标准形态全身图、退役 V2.2 轻 Q 图或旧 V2.1 三头身图。
+每张图单独生成。先写清 `Core idea`、`Scene metaphor` 和角色参与方式，再选择视觉参考。常规正文全身只需正文 Q 版正面母版或最接近角度的单图；身份、动作或情绪容易漂移时，才补充一张直接相关参考。不要让参考图决定隐喻，也不要同时加载标准形态与正文 Q 版全身图。
 
 不要复制一个永远不变的巨型提示词。按当前文章填充以下结构，删掉无关项。
 
@@ -9,7 +9,7 @@ Use case: illustration-story
 Asset type: standalone 16:9 Chinese article-body illustration
 
 Identity reference:
-Image 1 is the closest KevinBee V2.3 strong-chibi article-form reference. Preserve the same oversized red-star white cap, ice-blue bob, red-orange eyes, calm independent expression, compact torso, short movable limbs, small hands, muted-red short cardigan, navy skirt and light sneakers. Childlike visual proportions, rounded knees and substantial small shoes are allowed in this Q form. Keep shoulders gentle and narrower than the head-and-hair silhouette. Match the reference's internal Q design instead of shrinking a standard-body character on the canvas; adapt pose and perspective to the new metaphor without stretching the legs back to standard proportions.
+Image 1 is the closest KevinBee article Q-form reference. Preserve the same oversized red-star white cap, ice-blue bob, red-orange eyes, calm independent expression, compact torso, short movable limbs, small hands, muted-red short cardigan, navy skirt and light sneakers. Childlike visual proportions, rounded knees and substantial small shoes are allowed in this Q form. Keep shoulders gentle and narrower than the head-and-hair silhouette. Match the reference's internal Q design instead of shrinking a standard-body character on the canvas; adapt pose and perspective to the new metaphor without stretching the legs back to standard proportions.
 {从 ip-core.md 的“提示词身份片段”取用必要内容；参考图已经稳定时可缩短}
 
 Core idea:
@@ -50,7 +50,7 @@ Remove only the incorrect text and its underline or callout. Fill the area with 
 ### 修正职业化或旁观化参与
 
 ```text
-Keep the core idea and sparse composition, but change KevinBee's relationship to the scene so she is causally involved without becoming a fixed worker. She may experience, choose, bear, follow, release, balance or lightly influence the key relation. Do not leave her merely watching from the side: removing her must noticeably weaken the core action, tension or choice. Preserve her V2 identity and casual outfit. Do not add occupational tools or uniforms.
+Keep the core idea and sparse composition, but change KevinBee's relationship to the scene so she is causally involved without becoming a fixed worker. She may experience, choose, bear, follow, release, balance or lightly influence the key relation. Do not leave her merely watching from the side: removing her must noticeably weaken the core action, tension or choice. Preserve her identity and casual outfit. Do not add occupational tools or uniforms.
 ```
 
 ## 输出尺寸

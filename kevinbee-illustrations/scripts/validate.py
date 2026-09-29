@@ -15,7 +15,8 @@ REQUIRED_FILES = (
     "SKILL.md",
     "agents/openai.yaml",
     "references/ip-core.md",
-    "references/character-model-v2.3.md",
+    "references/character-model.md",
+    "references/article-image-roles.md",
     "references/article-body-style.md",
     "references/article-body-prompt.md",
     "references/composition-patterns.md",
@@ -28,14 +29,7 @@ REQUIRED_FILES = (
 )
 
 ACTIVE_TEXT_GLOBS = ("*.md", "*.yaml")
-STALE_REFERENCES = (
-    "references/kevinbee-ip.md",
-    "references/style-dna.md",
-    "references/prompt-template.md",
-    "assets/examples/",
-    "ip-reference/v2.2/",
-    "character-model-v2.2.md",
-)
+STALE_REFERENCES = ("ip-reference/", "cover-reference/", "archive/", "tests/")
 STALE_COPY = (
     "猩红色连帽斗篷",
     "黑色战斗裙",
@@ -69,7 +63,8 @@ def main() -> int:
             errors.append("SKILL.md must have a non-empty description")
         for reference in (
             "references/ip-core.md",
-            "references/character-model-v2.3.md",
+            "references/character-model.md",
+            "references/article-image-roles.md",
             "references/article-body-style.md",
             "references/article-body-prompt.md",
             "references/composition-patterns.md",
@@ -100,7 +95,11 @@ def main() -> int:
         for stale in STALE_COPY:
             if stale in text:
                 relative = text_path.relative_to(SKILL_ROOT)
-                errors.append(f"stale V1 character copy in {relative}: {stale}")
+                errors.append(f"stale character copy in {relative}: {stale}")
+
+        relative = text_path.relative_to(SKILL_ROOT)
+        if re.search(r"(?i)\bv\d+(?:\.\d+)*\b", text):
+            errors.append(f"version label in active text: {relative}")
 
     manifest_path = SKILL_ROOT / "assets/manifest.yaml"
     if manifest_path.is_file():
@@ -108,33 +107,17 @@ def main() -> int:
         declared_files = set(
             re.findall(r'^\s*- file: "([^"]+)"', manifest, re.MULTILINE)
         )
-        declared_files.update(
-            re.findall(r'^\s*(?:- )?overview: "([^"]+)"', manifest, re.MULTILINE)
-        )
-        declared_locations = {
-            relative
-            for relative in re.findall(
-                r'^\s*(?:- )?location: "([^"]+)"', manifest, re.MULTILINE
-            )
-            if not relative.startswith("../")
-        }
 
         for relative in sorted(declared_files):
             if not (SKILL_ROOT / "assets" / relative).is_file():
                 errors.append(f"manifest points to missing asset: {relative}")
 
-        for relative in sorted(declared_locations):
-            if not (SKILL_ROOT / "assets" / relative).is_dir():
-                errors.append(f"manifest points to missing asset directory: {relative}")
-
         for image_path in sorted((SKILL_ROOT / "assets").rglob("*.png")):
             relative = image_path.relative_to(SKILL_ROOT / "assets").as_posix()
-            covered_by_pool = any(
-                relative.startswith(location.rstrip("/") + "/")
-                for location in declared_locations
-            )
-            if relative not in declared_files and not covered_by_pool:
+            if relative not in declared_files:
                 errors.append(f"asset is not routed by manifest: {relative}")
+            if re.search(r"(?i)(?:^|/)v\d+(?:\.\d+)*(?:/|$)", relative):
+                errors.append(f"versioned asset directory: {relative}")
 
     hashes: dict[str, Path] = {}
     assets_root = SKILL_ROOT / "assets"

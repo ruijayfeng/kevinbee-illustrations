@@ -2,7 +2,7 @@
 
 KevinBee Illustrations (凯冰文章配图) is an AI-agent skill maintained by 凯冰 (KevinBee).
 
-The V2 identity references and article examples in `kevinbee-illustrations/assets/` were generated for character consistency and style calibration. Legacy V1 assets are retained under `archive/legacy-v1/` for migration history and are excluded from the active skill context.
+The identity references in `kevinbee-illustrations/assets/` were generated for character consistency and style calibration. Earlier explorations, tests, and examples remain available in Git history; the current checkout contains the active skill package.
 
 The recurring character 凯冰 (KevinBee) is part of 凯冰 (KevinBee)'s visual language for Chinese article illustrations. When redistributing or adapting this repository, please keep the `KevinBee Illustrations` name or provide attribution to 凯冰 (KevinBee) in your derived documentation.
 

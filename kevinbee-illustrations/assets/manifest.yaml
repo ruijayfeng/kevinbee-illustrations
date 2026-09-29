@@ -1,7 +1,7 @@
 selection_policy:
   identity_is_fixed: true
   cover_concept_from_article: true
-  rule: "先由文章决定隐喻、空间关系和动作，再选择最少的人物参考；封面可另选一张内容关系匹配的设计参考，但由文章重新决定事件与版面。"
+  rule: "先由文章决定隐喻、空间关系和动作；封面研究图用于理解设计方法，图像生成只加载需要的人物身份参考。"
 
 identity_reference:
   standard_cover:
@@ -48,27 +48,27 @@ identity_reference:
       load_when: "正文背面全身构图"
 
 cover_examples:
-  rule: "构思完成后按需查看；内容关系确实匹配时，最多选一张成图作为封面设计参考输入，与标准形态母版分工。研究图优先传递事件组织、动势和标题层级，不负责人物身份、肩袖或固定版式。没有匹配关系时只用人物母版。"
+  rule: "封面规划时阅读 references/cover-examples.md，按需观察成图，提炼布局、发散、人物参与和标题判断。案例不作为图像生成输入、人物比例参考或固定版式；生成时根据当前文章写出新的封面方案。"
   editorial:
     - file: "cover/editorial-examples/seed-miniature-room.png"
       role: "近景人物、微缩场景与标题的体量关系"
-      load_when: "文章需要近景人物与可托举的主对象共同聚焦时，可作设计参考"
+      load_when: "规划近景人物与主对象的体量关系时，供观察分析"
     - file: "cover/editorial-examples/nano-work.png"
       role: "安静人物、工作主题与留白中的标题关系"
-      load_when: "文章需要安静语气与较大标题留白时，可作设计参考"
+      load_when: "规划安静语气和标题留白时，供观察分析"
     - file: "cover/editorial-examples/remote-assistance.png"
       role: "人物、截图与远程屏幕之间的动作关系"
-      load_when: "文章确实需要人物连接两个叙事对象时，可作设计参考"
+      load_when: "规划人物如何连接两个叙事对象时，供观察分析"
   concept_studies:
     - file: "cover/concept-studies/qwen-branching.png"
       role: "一个起点展开多种结果的封面构思"
-      load_when: "文章确实讨论单一来源与多样输出时，可作分岔关系的设计参考"
+      load_when: "理解多结果关系如何组织为画面时，供观察分析"
     - file: "cover/concept-studies/hyper3d-forward.png"
       role: "进入有明显视觉质感的产品世界"
-      load_when: "文章确实讨论进入某种体验时，可作空间动势的设计参考"
+      load_when: "理解进入场景的动势与标题融合时，供观察分析"
     - file: "cover/concept-studies/fighting-skill-impact.png"
       role: "动作技能的瞬间冲击"
-      load_when: "文章确实讨论动作技能时，可作前景动势的设计参考"
+      load_when: "理解前景动作的视觉重心时，供观察分析"
     - file: "cover/concept-studies/teach-once-causal.png"
       role: "一次示范触发后续步骤的封面构思"
-      load_when: "文章确实讨论示范与后续执行时，可作事件链的设计参考"
+      load_when: "理解因果路径与人物触发动作时，供观察分析"

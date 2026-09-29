@@ -56,7 +56,7 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成封面。
 |---|---|
 | ![凯冰标准形态](kevinbee-illustrations/assets/identity/standard/master.png) | ![凯冰正文 Q 版](kevinbee-illustrations/assets/identity/article-q/master-front.png) |
 
-标准形态的现有母版可校准身份，但其宽松落肩袖仍待比例验收；新封面需单独检查肩峰、袖量和最终剪影。母版内容尚未重画。
+标准形态母版及各角度全身图已统一收敛落肩线与上臂袖量，可用于校准身份和肩袖轮廓。新封面仍需按具体动作、景别和最终裁切检查肩峰、袖量与剪影。
 
 ## 专门的封面功能与案例
 

@@ -43,6 +43,7 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成封面。
 标题：<文章标题>
 目标平台或画幅：<平台或尺寸>
 使用凯冰标准形态；根据正文确定主对象、核心张力和封面短主题词。
+若研究图有与文章相符的内容关系，可选一张作为设计参考；人物比例仍由标准形态母版校准。
 
 <粘贴文章>
 ```
@@ -59,13 +60,13 @@ Use $kevinbee-illustrations 为这篇已定稿文章生成封面。
 
 ## 专门的封面功能与案例
 
-封面模式会从文章提炼主对象与一处核心张力，安排凯冰的神情、动作、景别、占比和短标题，再检查实际画幅、目标裁切和缩略图。完整流程见 [SKILL.md](kevinbee-illustrations/SKILL.md)；案例的使用边界见 [封面案例复盘](kevinbee-illustrations/references/cover-examples.md)。
+封面模式会从文章提炼主对象与一处核心张力，安排凯冰的神情、动作、景别、占比和短标题，再检查实际画幅、目标裁切和缩略图。完整流程见 [SKILL.md](kevinbee-illustrations/SKILL.md)；案例的选择与使用见 [封面设计参考](kevinbee-illustrations/references/cover-examples.md)。
 
 | 既有文章封面 | 内容构思研究 |
 |---|---|
 | [微缩房间](kevinbee-illustrations/assets/cover/editorial-examples/seed-miniature-room.png) · [纳米工作](kevinbee-illustrations/assets/cover/editorial-examples/nano-work.png) · [远程协助](kevinbee-illustrations/assets/cover/editorial-examples/remote-assistance.png) | [多结果分岔](kevinbee-illustrations/assets/cover/concept-studies/qwen-branching.png) · [进入产品世界](kevinbee-illustrations/assets/cover/concept-studies/hyper3d-forward.png) · [动作冲击](kevinbee-illustrations/assets/cover/concept-studies/fighting-skill-impact.png) · [一次示范带出后续](kevinbee-illustrations/assets/cover/concept-studies/teach-once-causal.png) |
 
-这些成图用于复盘封面设计，生成新图时不默认加载。四张内容构思研究图的肩袖比例尚未合格，不作为人物比例参考；每篇文章仍重新决定隐喻和构图。
+构思已由文章确定、且内容关系相符时，可从这些成图中选**最多一张**作为封面生成的设计参考图像；标准形态母版仍负责人物身份。四张内容构思研究图的肩袖比例尚未合格，不作为人物比例参考；每篇文章仍重新决定隐喻、动作和构图。没有相符案例时直接按文章提出新方向。
 
 ## 当前目录
 

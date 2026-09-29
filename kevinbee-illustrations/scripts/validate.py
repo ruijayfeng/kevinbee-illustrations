@@ -29,6 +29,13 @@ REQUIRED_FILES = (
     "assets/manifest.yaml",
 )
 
+REQUIRED_COVER_STUDIES = (
+    "cover/concept-studies/qwen-branching.png",
+    "cover/concept-studies/hyper3d-forward.png",
+    "cover/concept-studies/fighting-skill-impact.png",
+    "cover/concept-studies/teach-once-causal.png",
+)
+
 ACTIVE_TEXT_GLOBS = ("*.md", "*.yaml")
 STALE_REFERENCES = ("ip-reference/", "cover-reference/", "archive/", "tests/")
 STALE_COPY = (
@@ -109,6 +116,10 @@ def main() -> int:
         declared_files = set(
             re.findall(r'^\s*- file: "([^"]+)"', manifest, re.MULTILINE)
         )
+
+        for relative in REQUIRED_COVER_STUDIES:
+            if relative not in declared_files:
+                errors.append(f"cover study is not routed by manifest: {relative}")
 
         for relative in sorted(declared_files):
             if not (SKILL_ROOT / "assets" / relative).is_file():

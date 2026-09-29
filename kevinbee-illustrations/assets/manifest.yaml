@@ -9,8 +9,8 @@ selection_policy:
 identity_reference:
   standard_form:
     - file: "ip-reference/v2.1/00-canonical-master.png"
-      role: "V2.1 唯一标准身份母版：脸、发型、帽子、配色与成年气质"
-      load_when: "标准形态、身份核对，或头肩近景需要锁定成年气质"
+      role: "V2.1 标准封面与身份母版：脸、发型、帽子、配色与成年比例"
+      load_when: "文章封面默认，标准形态，或头肩近景需要锁定成年气质"
     - file: "ip-reference/v2.1/01-turnaround-five-view.png"
       role: "V2.1 标准形态五视图人工总览"
       load_when: "仅用于人工检查跨角度结构；普通生成选择对应单视图"

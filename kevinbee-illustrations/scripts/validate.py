@@ -20,6 +20,9 @@ REQUIRED_FILES = (
     "references/article-body-prompt.md",
     "references/composition-patterns.md",
     "references/qa-checklist.md",
+    "references/cover-style.md",
+    "references/cover-prompt.md",
+    "references/cover-qa.md",
     "assets/manifest.yaml",
 )
 
@@ -70,6 +73,9 @@ def main() -> int:
             "references/article-body-prompt.md",
             "references/composition-patterns.md",
             "references/qa-checklist.md",
+            "references/cover-style.md",
+            "references/cover-prompt.md",
+            "references/cover-qa.md",
             "assets/manifest.yaml",
         ):
             if reference not in skill:
